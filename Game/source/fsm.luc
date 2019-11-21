@@ -1,9 +1,16 @@
 module statemachine (
     input clk,
     input rst,
-    input bt1,  
-    input bt2,
-    input bt3,  
+    input addbt,    //add
+    input subbt,    //sub
+    input mulbt,    //mul
+    input startbt,  //start
+    input clrbt,         //clear
+    input lanereg[2],    //lane register
+    input ln1reg[5],
+    input ln2reg[5],
+    input ln3reg[5],
+    output c,            //constant
     output alufn[6],
     output bsel[2],
     output we
@@ -11,7 +18,9 @@ module statemachine (
   
   .clk(clk) {
     .rst(rst) {
-      fsm state = {IDLE, SELPROB, PROB, ADD, SUB, MUL, CLR, CHECKRES, CHECKLN, MOVELN1, MOVELN2, MOVELN3, UPDATELN, END};
+      fsm state = {
+      IDLE, SELPROB, PROB, ADD, SUB, MUL, CLR, CHECKRES, 
+      CHECKLN, MOVELN1, MOVELN2, MOVELN3, CHGLN, END};
     }
   }
 
@@ -19,5 +28,66 @@ module statemachine (
     alufn = 000000;
     bsel = 00;
     we = 0;
+    c = 0;
+    
+    case(state.q){
+      state.IDLE:
+        alufn = 000000;
+        bsel = 00;
+        we = 0;
+        if (startbt == 1)
+          state.d = state.SELPROB;
+          
+      state.SELPROB:
+        alufn = 000000;
+        bsel = 10;
+        we = 1;
+        c = 23;
+        state.d = state.PROB;
+        
+      state.PROB:  
+          
+      state.CHECKLN:
+        alufn = 000000;
+        bsel = 00;
+        we = 0;
+        if (lanereg == b00)
+          state.d = state.MOVELN1;
+        if (lanereg == b01)
+          state.d = state.MOVELN2;
+        if (lanereg == b10)
+          state.d = state.MOVELN3;              
+        
+      state.MOVELN1:
+        alufn = b100000;
+        bsel = b10;
+        we = 1;
+        c = 1;
+        if (ln1reg == b10000)
+          state.d = state.CHGLN;
+        else
+          state.d = state.PROB;
+          
+      state.MOVELN2:
+        alufn = b100000;
+        bsel = b10;
+        we = 1;
+        c = 1;
+        if (ln2reg == b10000)
+          state.d = state.CHGLN;
+        else
+          state.d = state.PROB;  
+          
+      state.MOVELN3:
+        alufn = b100000;
+        bsel = b10;
+        we = 1;
+        c = 1;
+        if (ln3reg == b10000)
+          state.d = state.END;
+        else
+          state.d = state.PROB;   
+              
+    }
   }
 }
