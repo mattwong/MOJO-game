@@ -1,0 +1,23 @@
+module statemachine (
+    input clk,
+    input rst,
+    input bt1,  
+    input bt2,
+    input bt3,  
+    output alufn[6],
+    output bsel[2],
+    output we
+  ) {
+  
+  .clk(clk) {
+    .rst(rst) {
+      fsm state = {IDLE, SELPROB, PROB, ADD, SUB, MUL, CLR, CHECKRES, CHECKLN, MOVELN1, MOVELN2, MOVELN3, UPDATELN, END};
+    }
+  }
+
+  always {
+    alufn = 000000;
+    bsel = 00;
+    we = 0;
+  }
+}
