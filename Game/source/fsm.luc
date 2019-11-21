@@ -13,7 +13,9 @@ module statemachine (
     output c,            //constant
     output alufn[6],
     output bsel[2],
-    output we
+    output we,         //write enable
+    output wa[3],      //write address
+    output toreg
   ) {
   
   .clk(clk) {
@@ -28,7 +30,9 @@ module statemachine (
     alufn = 000000;
     bsel = 00;
     we = 0;
+    wa = 0;
     c = 0;
+    toreg = 0;
     
     case(state.q){
       state.IDLE:
@@ -40,9 +44,10 @@ module statemachine (
           
       state.SELPROB:
         alufn = 000000;
-        bsel = 10;
+        bsel = b10;
         we = 1;
-        c = 23;
+        wa = b000; //placeholder
+        toreg = 23;
         state.d = state.PROB;
         
       state.PROB:  
@@ -62,6 +67,7 @@ module statemachine (
         alufn = b100000;
         bsel = b10;
         we = 1;
+        wa = b000;//placeholder
         c = 1;
         if (ln1reg == b10000)
           state.d = state.CHGLN;
@@ -72,6 +78,7 @@ module statemachine (
         alufn = b100000;
         bsel = b10;
         we = 1;
+        wa = b000;//placeholder
         c = 1;
         if (ln2reg == b10000)
           state.d = state.CHGLN;
@@ -82,11 +89,20 @@ module statemachine (
         alufn = b100000;
         bsel = b10;
         we = 1;
+        wa = b000;//placholder
         c = 1;
         if (ln3reg == b10000)
           state.d = state.END;
         else
-          state.d = state.PROB;   
+          state.d = state.PROB;  
+          
+      state.CHGLN:
+        alufn = b000000;
+        bsel = 00;
+        we = 1;
+        wa = b000;//placeholder
+        c = 1;   
+        state.d = state.PROB;
               
     }
   }
