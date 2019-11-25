@@ -13,6 +13,7 @@ module statemachine (
     output c,            //constant
     output alufn[6],
     output bsel[2],
+    output asel[2],
     output we,         //write enable
     output wa[3],      //write address
     output toreg
@@ -29,6 +30,7 @@ module statemachine (
   always {
     alufn = 000000;
     bsel = 00;
+    asel = 00;
     we = 0;
     wa = 0;
     c = 0;
@@ -51,6 +53,16 @@ module statemachine (
         state.d = state.PROB;
         
       state.PROB:  
+        if (addbt == 1)
+          state.d = state.ADD;
+        if (subbt == 1)
+          state.d = state.SUB;  
+        if (mulbt == 1)
+          state.d = state.MUL;
+        if (clrbt == 1)
+          state.d = state.CLR;
+          
+            
           
       state.CHECKLN:
         alufn = 000000;
