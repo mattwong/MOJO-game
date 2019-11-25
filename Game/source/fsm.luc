@@ -10,10 +10,11 @@ module statemachine (
     input ln1reg[5],
     input ln2reg[5],
     input ln3reg[5],
+    input cmpreg,
     output c,            //constant
     output alufn[6],
-    output bsel[2],
-    output asel[2],
+    output bsel,
+    output asel[3],
     output we,         //write enable
     output wa[3],      //write address
     output toreg
@@ -22,15 +23,15 @@ module statemachine (
   .clk(clk) {
     .rst(rst) {
       fsm state = {
-      IDLE, SELPROB, PROB, ADD, SUB, MUL, CLR, CHECKRES, 
+      IDLE, SELPROB, PROB, ADD, SUB, MUL, CLR, CMP, CHECKRES, 
       CHECKLN, MOVELN1, MOVELN2, MOVELN3, CHGLN, END};
     }
   }
 
   always {
     alufn = 000000;
-    bsel = 00;
-    asel = 00;
+    bsel = 0;
+    asel = 000;
     we = 0;
     wa = 0;
     c = 0;
@@ -39,16 +40,16 @@ module statemachine (
     case(state.q){
       state.IDLE:
         alufn = 000000;
-        bsel = 00;
+        bsel = 0;
         we = 0;
         if (startbt == 1)
           state.d = state.SELPROB;
           
       state.SELPROB:
         alufn = 000000;
-        bsel = b10;
+        bsel = 1;
         we = 1;
-        wa = b000; //placeholder
+        wa = b001; 
         toreg = 23;
         state.d = state.PROB;
         
@@ -62,12 +63,57 @@ module statemachine (
         if (clrbt == 1)
           state.d = state.CLR;
           
-            
+      state.ADD:
+        alufn = 000000;
+        asel = 000;
+        bsel = 1;  
+        we = 1;
+        wa = 000;
+        c = 2;
+        state.d = state.CMP;    
+        
+      state.SUB:
+        alufn = b000001;
+        asel = 000;
+        bsel = 1;  
+        we = 1;
+        wa = 000;
+        c = 1;
+        state.d = state.CMP;   
+        
+      state.MUL:
+        alufn = b000010;
+        asel = 000;
+        bsel = 1;  
+        we = 1;
+        wa = 000;
+        c = 3;
+        state.d = state.CMP;   
+        
+      state.CLR:
+        alufn = b000010;
+        asel = 000;
+        bsel = 1;  
+        we = 1;
+        wa = 000;
+        c = 0;
+        state.d = state.CMP;   
+        
+      state.CMP:
+        alufn = b110011;  
+        asel = 000;
+        bsel = 0;
+        we = 1;
+        wa = b101;
+        state.d = state.CHECKRES;
+        
+      state.CHECKRES:
+        if (cmpreg == 1)
+          state.d = state.CHECKLN;
+        else
+          state.d = state.PROB;  
           
       state.CHECKLN:
-        alufn = 000000;
-        bsel = 00;
-        we = 0;
         if (lanereg == b00)
           state.d = state.MOVELN1;
         if (lanereg == b01)
@@ -77,9 +123,10 @@ module statemachine (
         
       state.MOVELN1:
         alufn = b100000;
-        bsel = b10;
+        bsel = 1;
         we = 1;
-        wa = b000;//placeholder
+        wa = b010;
+        asel = b010;
         c = 1;
         if (ln1reg == b10000)
           state.d = state.CHGLN;
@@ -88,9 +135,10 @@ module statemachine (
           
       state.MOVELN2:
         alufn = b100000;
-        bsel = b10;
+        bsel = 1;
         we = 1;
-        wa = b000;//placeholder
+        wa = b011;
+        asel = b011;
         c = 1;
         if (ln2reg == b10000)
           state.d = state.CHGLN;
@@ -99,9 +147,10 @@ module statemachine (
           
       state.MOVELN3:
         alufn = b100000;
-        bsel = b10;
+        bsel = 1;
         we = 1;
-        wa = b000;//placholder
+        wa = b100;
+        asel = b100;
         c = 1;
         if (ln3reg == b10000)
           state.d = state.END;
@@ -112,7 +161,8 @@ module statemachine (
         alufn = b000000;
         bsel = 00;
         we = 1;
-        wa = b000;//placeholder
+        wa = b110;
+        asel = b110;
         c = 1;   
         state.d = state.PROB;
               
