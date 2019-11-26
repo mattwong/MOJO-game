@@ -5,15 +5,11 @@ module statemachine (
     input subbt,    //sub
     input mulbt,    //mul
     input startbt,  //start
-    input clrbt,         //clear
-    input lanereg[2],    //lane register
-    input ln1reg[5],
-    input ln2reg[5],
-    input ln3reg[5],
-    input cmpreg,
-    output c,            //constant
+    input clrbt,    //clear
+    input reg[5],
+    output ra[3],
     output alufn[6],
-    output bsel,
+    output bsel[3],
     output asel[3],
     output we,         //write enable
     output wa[3],      //write address
@@ -30,24 +26,19 @@ module statemachine (
 
   always {
     alufn = 000000;
-    bsel = 0;
+    ra = 000;
+    bsel = 000;
     asel = 000;
     we = 0;
     wa = 0;
-    c = 0;
     toreg = 0;
     
     case(state.q){
       state.IDLE:
-        alufn = 000000;
-        bsel = 0;
-        we = 0;
         if (startbt == 1)
           state.d = state.SELPROB;
           
       state.SELPROB:
-        alufn = 000000;
-        bsel = 1;
         we = 1;
         wa = b001; 
         toreg = 23;
@@ -66,104 +57,101 @@ module statemachine (
       state.ADD:
         alufn = 000000;
         asel = 000;
-        bsel = 1;  
+        bsel = b010;  
         we = 1;
         wa = 000;
-        c = 2;
         state.d = state.CMP;    
         
       state.SUB:
         alufn = b000001;
         asel = 000;
-        bsel = 1;  
+        bsel = b001;  
         we = 1;
         wa = 000;
-        c = 1;
         state.d = state.CMP;   
         
       state.MUL:
         alufn = b000010;
         asel = 000;
-        bsel = 1;  
+        bsel = b011;  
         we = 1;
         wa = 000;
-        c = 3;
         state.d = state.CMP;   
         
       state.CLR:
         alufn = b000010;
         asel = 000;
-        bsel = 1;  
+        bsel = 000;  
         we = 1;
         wa = 000;
-        c = 0;
         state.d = state.CMP;   
         
       state.CMP:
         alufn = b110011;  
         asel = 000;
-        bsel = 0;
+        bsel = b111;
         we = 1;
         wa = b101;
         state.d = state.CHECKRES;
         
       state.CHECKRES:
-        if (cmpreg == 1)
+        ra = b101;
+        if (reg == 1)
           state.d = state.CHECKLN;
         else
           state.d = state.PROB;  
           
       state.CHECKLN:
-        if (lanereg == b00)
+        ra = b110;
+        if (reg == b00)
           state.d = state.MOVELN1;
-        if (lanereg == b01)
+        if (reg == b01)
           state.d = state.MOVELN2;
-        if (lanereg == b10)
+        if (reg == b10)
           state.d = state.MOVELN3;              
         
       state.MOVELN1:
         alufn = b100000;
-        bsel = 1;
+        bsel = b001;
         we = 1;
         wa = b010;
         asel = b010;
-        c = 1;
-        if (ln1reg == b10000)
+        ra = b010;
+        if (reg == b10000)
           state.d = state.CHGLN;
         else
           state.d = state.PROB;
           
       state.MOVELN2:
         alufn = b100000;
-        bsel = 1;
+        bsel = b001;
         we = 1;
         wa = b011;
         asel = b011;
-        c = 1;
-        if (ln2reg == b10000)
+        ra = b011;
+        if (reg == b10000)
           state.d = state.CHGLN;
         else
           state.d = state.PROB;  
           
       state.MOVELN3:
         alufn = b100000;
-        bsel = 1;
+        bsel = b001;
         we = 1;
         wa = b100;
         asel = b100;
-        c = 1;
-        if (ln3reg == b10000)
+        ra = b100;
+        if (reg == b10000)
           state.d = state.END;
         else
           state.d = state.PROB;  
           
       state.CHGLN:
         alufn = b000000;
-        bsel = 00;
+        bsel = b001;
         we = 1;
         wa = b110;
         asel = b110;
-        c = 1;   
         state.d = state.PROB;
               
     }
