@@ -1,0 +1,94 @@
+module registers (
+    input clk,  // clock
+    input rst,  // reset
+    
+    //input signals 
+    input alufn[6], 
+    input asel1[3],
+    input asel2[3], 
+    input bsel1, 
+    input bsel2,
+    input wa1[3], 
+    input wa2[3],
+    input we1,
+    input we2,
+    
+    //4 inputs 
+    input fsm1, //input from fsm player 1 
+    input alu1, //input from alu player 1 
+    input fsm2, //input from fsm player 2 
+    input alu2, //input from alu player 2
+    
+    output ainput1, //fed into A input of alu1
+    output binput1, //fed into B input of alu1
+    output back1, //fed back into fsm1 
+    output ainput2, //fed into A input of alu1
+    output binput2, //fed into B input of alu1
+    output back2 //fed back into fsm1 
+  ) 
+
+
+  {
+  var r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14; 
+  always {
+    ainput1 = 0; 
+    ainput2 = 0; 
+    binput1 = 0; 
+    binput2 = 0; 
+    back1 = 0; 
+    back2 = 0; 
+    
+    //to write values of player's current value  
+    if (we1 == 1){
+      if (wa1 == b000){
+      r1 = alu1;}
+      
+    }
+    
+    if (we2 == 1){
+      if (wa2 == b000){
+        r2 = alu2;}
+          }
+    
+    //to pass player value into the alu 
+    if (asel1 == b000){
+      ainput1 = r1;}
+      
+    if (asel2 == b000){
+      ainput2 = r2;}
+    
+    //wtf lol 
+    if (asel1 == b010){
+       ainput1 = r4;}
+    
+    if (asel1 == b011){
+       ainput1 = r5;}
+    
+    if (asel1 == b100){
+      ainput1 = r6;}
+     
+    if (asel2 == b010){
+       ainput1 = r7;}
+    
+    if (asel2 == b011){
+       ainput1 = r8;}
+    
+    if (asel2 == b100){
+      ainput1 = r9;}  
+      
+    //comparing result 
+    if (asel1 == b101){
+    ainput1 = r10;}
+      
+    if (asel2 == b101){
+    ainput1 = r11;}
+      
+    //bsel 
+    if (bsel1 == 1) {
+      binput1 = fsm1;}
+      
+    if (bsel2 == 1) {
+      binput2 = fsm2; }
+      
+  }
+}
