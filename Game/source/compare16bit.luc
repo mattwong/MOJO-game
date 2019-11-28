@@ -1,0 +1,22 @@
+module compare16bit (
+//inputs and outputs 
+  input alufn[6], 
+  input z, 
+  input v, 
+  input n, 
+  output s[16]
+    ) {
+ always {
+  //initialise cmp[15:0] to 0 
+    s[15:0] = 0;
+    
+    if (alufn[2:1] == b10){
+    s[0] = n ^ v;}
+      
+    if (alufn[2:1] == b01){
+    s[0] = z;}
+      
+    if (alufn[2:1] == b11){
+    s[0] = (n^v) | z;}
+  }
+}  

@@ -1,0 +1,10 @@
+module multiply_16bit (
+    input a[16],
+    input b[16],
+    output s[16]
+  ) {
+
+  always {
+    s[15:0]=a[15:0]*b[15:0];
+  }
+}

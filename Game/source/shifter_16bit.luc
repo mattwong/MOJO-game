@@ -1,0 +1,29 @@
+module shifter_16bit (
+    input a[16],
+    input b[4],
+    input alufn[2],
+    output s[16]
+  ) {
+  
+  always {
+    // first initialize to all 0
+    s[15:0] = 0;
+    
+    //alufn signal 11 is for SRA
+    if(alufn[1:0] == b11)
+    {
+        s[15:0] = $signed(a[15:0]) >>> b[3:0];
+    }
+    
+    if(alufn[1:0] == b01) //SHR if 01
+    {
+        s[15:0] = a[15:0] >> b[3:0];
+    }
+    
+    //alufn signal 00 is for SHL
+    if(alufn[1:0] == b00) //00 = shl
+    {
+        s[15:0] = a[15:0] << b[3:0];
+    }
+  }
+}
