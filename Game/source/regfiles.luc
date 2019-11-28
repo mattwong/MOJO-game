@@ -1,0 +1,126 @@
+module regfiles (
+    input clk,  // clock
+    input rst,  // reset
+    
+    input asel1[3],
+    input asel2[3],
+    input wa1[3],
+    input wa2[3],
+    input we1,
+    input we2,
+    input ra1[3],
+    input ra2[3],
+    
+    input fsm1[16],
+    input alu1[16],
+    input alu2[16],
+    
+    output a1[16],
+    output a2[16],
+    output fsmport1[16],
+    output fsmport2[16],
+    
+    //for connecting to LED/7 seg
+    output goalreg[16],
+    output lane1p1[16],
+    output lane2p1[16],
+    output lane3p1[16],
+    output lane1p2[16],
+    output lane2p2[16],
+    output lane3p2[16],
+    output p1num[16],
+    output p2num[16] 
+  ) {
+  
+  .clk(clk){
+    .rst(rst){
+      dff r1[16];  //p1num
+      dff r2[16];  //p2num
+      dff r3[16];  //goalnum
+      dff r4[16];  //p1l1
+      dff r5[16];  //p1l2
+      dff r6[16];  //p1l3
+      dff r7[16];  //p2l1
+      dff r8[16];  //p2l2
+      dff r9[16];  //p2l3
+      dff r10[16];  //lanereg
+      dff r11[16];  //p1cmp
+      dff r12[16];  //p2cmp
+    }
+  }
+
+  always {
+    
+    //write
+    if (we1){
+      case(wa1){
+          b000 : r1.d = alu1;
+          b001 : r3.d = fsm1;
+          b010 : r4.d = alu1;
+          b011 : r5.d = alu1;
+          b100 : r6.d = alu1;
+          b110 : r10.d = alu1;
+          b101 : r11.d = alu1;
+      }
+    }
+    
+    if (we2){
+      case(wa2){
+          b000 : r2.d = alu2;
+          b010 : r7.d = alu2;
+          b011 : r8.d = alu2;
+          b100 : r9.d = alu2;
+          b110 : r10.d = alu2;
+          b101 : r12.d = alu2;
+      }
+    }
+    
+    //port a
+    case(asel1){
+        b000 : a1 = r1.q;
+        b010 : a1 = r4.q;
+        b011 : a1 = r5.q;
+        b100 : a1 = r6.q;
+        b110 : a1 = r10.q;
+        default : a1 = 0;
+    }
+    
+    case(asel2){
+        b000 : a2 = r2.q;
+        b010 : a2 = r7.q;
+        b011 : a2 = r8.q;
+        b100 : a2 = r9.q;
+        b110 : a2 = r10.q;
+        default : a2 = 0;
+    }
+    
+    //fsm port
+    case(ra1){
+        b101 : fsmport1 = r11.q;
+        b110 : fsmport1 = r10.q;
+        b010 : fsmport1 = r4.q;
+        b011 : fsmport1 = r5.q;
+        b100 : fsmport1 = r6.q;
+        default : fsmport1 = 0;
+    }
+    
+    case(ra2){
+        b101 : fsmport2 = r12.q;
+        b110 : fsmport2 = r10.q;
+        b010 : fsmport2 = r7.q;
+        b011 : fsmport2 = r8.q;
+        b100 : fsmport2 = r9.q;
+        default : fsmport2 = 0;
+    }
+    
+    goalreg = r3.q;  
+    p1num = r1.q;
+    p2num = r2.q;
+    lane1p1 = r4.q;
+    lane2p1 = r5.q;
+    lane3p1 = r6.q;
+    lane1p2 = r7.q;
+    lane2p2 = r8.q;
+    lane3p2 = r9.q;
+  }
+}
