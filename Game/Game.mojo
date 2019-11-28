@@ -5,6 +5,7 @@
     <src>regfiles.luc</src>
     <src>seven_seg.luc</src>
     <src top="true">mojo_top.luc</src>
+    <ucf>pins.ucf</ucf>
     <ucf lib="true">mojo.ucf</ucf>
     <component>reset_conditioner.luc</component>
   </files>
