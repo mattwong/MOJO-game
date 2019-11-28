@@ -2,6 +2,7 @@ module regfiles (
     input clk,  // clock
     input rst,  // reset
     
+    //control logic inputs
     input asel1[3],
     input asel2[3],
     input wa1[3],
@@ -11,14 +12,14 @@ module regfiles (
     input ra1[3],
     input ra2[3],
     
-    input fsm1[16],
-    input alu1[16],
-    input alu2[16],
+    input fsm1[16],  //from fsm
+    input alu1[16],  //from ALU
+    input alu2[16],  //from ALU
     
-    output a1[16],
-    output a2[16],
-    output fsmport1[16],
-    output fsmport2[16],
+    output a1[16],  //connect to input of ALU
+    output a2[16],  //connect to input of ALU
+    output fsmport1[16],  //connect to fsm
+    output fsmport2[16],  //connect to fsm
     
     //for connecting to LED/7 seg
     output goalreg[16],
