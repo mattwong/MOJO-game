@@ -3,7 +3,7 @@
   <files>
     <src>fsm.luc</src>
     <src>regfiles.luc</src>
-    <src>registers.luc</src>
+    <src>seven_seg.luc</src>
     <src top="true">mojo_top.luc</src>
     <ucf lib="true">mojo.ucf</ucf>
     <component>reset_conditioner.luc</component>
