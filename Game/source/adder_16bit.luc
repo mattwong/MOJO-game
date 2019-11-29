@@ -1,4 +1,4 @@
-module adder_16bit_2 (
+module adder_16bit (
     input a[16],
     input b[16],
     input alufn[1],

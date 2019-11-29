@@ -6,14 +6,14 @@ module statemachine (
     input mulbt,    //mul
     input startbt,  //start
     input clrbt,    //clear
-    input reg[5],
+    input fromreg[16],
     output ra[3],
     output alufn[6],
     output bsel[3],
     output asel[3],
     output we,         //write enable
     output wa[3],      //write address
-    output toreg
+    output toreg[16]
   ) {
   
   .clk(clk) {
@@ -41,7 +41,7 @@ module statemachine (
       state.SELPROB:
         we = 1;
         wa = b001; 
-        toreg = 23;
+        toreg = b0000000000000101;
         state.d = state.PROB;
         
       state.PROB:  
@@ -56,18 +56,18 @@ module statemachine (
           
       state.ADD:
         alufn = 000000;
-        asel = 000;
-        bsel = b010;  
+        asel = b000;
+        bsel = b001;  
         we = 1;
         wa = 000;
         state.d = state.CMP;    
         
       state.SUB:
         alufn = b000001;
-        asel = 000;
+        asel = b000;
         bsel = b001;  
         we = 1;
-        wa = 000;
+        wa = b000;
         state.d = state.CMP;   
         
       state.MUL:
@@ -88,7 +88,7 @@ module statemachine (
         
       state.CMP:
         alufn = b110011;  
-        asel = 000;
+        asel = b000;
         bsel = b111;
         we = 1;
         wa = b101;
@@ -96,18 +96,18 @@ module statemachine (
         
       state.CHECKRES:
         ra = b101;
-        if (reg == 1)
+        if (fromreg == 1)
           state.d = state.CHECKLN;
         else
           state.d = state.PROB;  
           
       state.CHECKLN:
         ra = b110;
-        if (reg == b00)
+        if (fromreg == b00)
           state.d = state.MOVELN1;
-        if (reg == b01)
+        if (fromreg == b01)
           state.d = state.MOVELN2;
-        if (reg == b10)
+        if (fromreg == b10)
           state.d = state.MOVELN3;              
         
       state.MOVELN1:
@@ -117,7 +117,7 @@ module statemachine (
         wa = b010;
         asel = b010;
         ra = b010;
-        if (reg == b10000)
+        if (fromreg == b10000)
           state.d = state.CHGLN;
         else
           state.d = state.PROB;
@@ -129,7 +129,7 @@ module statemachine (
         wa = b011;
         asel = b011;
         ra = b011;
-        if (reg == b10000)
+        if (fromreg == b10000)
           state.d = state.CHGLN;
         else
           state.d = state.PROB;  
@@ -141,7 +141,7 @@ module statemachine (
         wa = b100;
         asel = b100;
         ra = b100;
-        if (reg == b10000)
+        if (fromreg == b10000)
           state.d = state.END;
         else
           state.d = state.PROB;  

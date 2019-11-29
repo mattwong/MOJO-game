@@ -10,15 +10,39 @@ module mojo_top (
     output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
     input avr_tx,           // AVR TX (FPGA RX)
     output avr_rx,          // AVR RX (FPGA TX)
-    input avr_rx_busy       // AVR RX buffer full
+    input avr_rx_busy,       // AVR RX buffer full
+    
+    input start,
+    input add1,
+    input sub1,
+    input mul1,
+    input clr1,
+    input add2,
+    input sub2,
+    input mul2,
+    input clr2,
+    
+    output p1display[7],
+    output p2display[7]
+
   ) {
   
   sig rst;                  // reset signal
+  
+  alu alu1;
+  alu alu2;
+  seven_seg seven_seg11;
+  seven_seg seven_seg2;
+  statemachine ctl1;
+  statemachine ctl2;
+  regfiles reg;
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     reset_conditioner reset_cond;
+    edge_detector edgeAdd1 (#RISE(1), #FALL(0));
+    button_conditioner condAdd1;
   }
   
   always {
@@ -29,5 +53,70 @@ module mojo_top (
     spi_miso = bz;          // not using SPI
     spi_channel = bzzzz;    // not using flags
     avr_rx = bz;            // not using serial port
+    
+    condAdd1.in = add1;
+    edgeAdd1.in = condAdd1.out;
+    
+    ctl1.clk = clk;
+    ctl1.rst = rst;
+    ctl1.startbt = start;
+    ctl1.addbt = edgeAdd1.out;
+    ctl1.subbt = sub1;
+    ctl1.mulbt = mul1;
+    ctl1.clrbt = clr1;
+    ctl1.fromreg = reg.fsmport1;
+    
+    ctl2.clk = clk;
+    ctl2.rst = rst;
+    ctl2.startbt = start;
+    ctl2.addbt = add2;
+    ctl2.subbt = sub2;
+    ctl2.mulbt = mul2;
+    ctl2.clrbt = clr2;
+    ctl2.fromreg = reg.fsmport2;
+    
+    alu1.alufn = ctl1.alufn;
+    alu1.a = reg.a1;
+    case(ctl1.bsel){
+      b000: alu1.b = 0;
+      b001: alu1.b = 1;
+      b010: alu1.b = 2;
+      b011: alu1.b = 3;
+      b111: alu1.b = reg.goalreg;
+      default: alu1.b = 0; 
+    }
+    
+    alu2.alufn = ctl2.alufn;
+    alu2.a = reg.a2;
+    case(ctl2.bsel){
+      b000: alu2.b = 0;
+      b001: alu2.b = 1;
+      b010: alu2.b = 2;
+      b011: alu2.b = 3;
+      b111: alu2.b = reg.goalreg;
+      default: alu2.b = 0; 
+    }
+    
+    reg.clk = clk;
+    reg.rst = rst;
+    reg.wa1 = ctl1.wa;
+    reg.asel1 = ctl1.asel;
+    reg.we1 = ctl1.we;
+    reg.ra1 = ctl1.ra;
+    reg.fsm1 = ctl1.toreg;
+    reg.alu1 = alu1.s;
+    reg.wa2 = ctl2.wa;
+    reg.asel2 = ctl2.asel;
+    reg.we2 = ctl2.we;
+    reg.ra2 = ctl2.ra;
+    reg.alu2 = alu2.s;
+    
+    seven_seg11.char = reg.goalreg[3:0];
+    seven_seg2.char = reg.p1num[3:0];
+    
+    p1display = seven_seg11.segs;
+    p2display = seven_seg2.segs;
+    
+    led[0] = reg.tob1;
   }
 }

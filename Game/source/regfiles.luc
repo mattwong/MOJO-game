@@ -21,6 +21,9 @@ module regfiles (
     output fsmport1[16],  //connect to fsm
     output fsmport2[16],  //connect to fsm
     
+    output tob1[16],
+    output tob2[16],
+    
     //for connecting to LED/7 seg
     output goalreg[16],
     output lane1p1[16],
@@ -51,7 +54,6 @@ module regfiles (
   }
 
   always {
-    
     //write
     if (we1){
       case(wa1){
@@ -123,5 +125,7 @@ module regfiles (
     lane1p2 = r7.q;
     lane2p2 = r8.q;
     lane3p2 = r9.q;
+    tob1 = r11.q;
+    tob2 = r12.q;
   }
 }

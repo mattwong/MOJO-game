@@ -1,0 +1,834 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: mojo_top_0.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mojo_top_0.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx9tqg144-2
+Output File Name                   : "mojo_top_0.ngc"
+
+---- Source Options
+Top Module Name                    : mojo_top_0
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_23.v" into library work
+Parsing module <adder_16bit_2_23>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_22.v" into library work
+Parsing module <adder_16bit_1_22>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_13.v" into library work
+Parsing module <shifter_16bit_13>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_21.v" into library work
+Parsing module <pipeline_21>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_15.v" into library work
+Parsing module <multiply_16bit_15>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_14.v" into library work
+Parsing module <compare16bit_14>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_12.v" into library work
+Parsing module <boolean_16bit_12>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_11.v" into library work
+Parsing module <adder_16bit_11>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/seven_seg_3.v" into library work
+Parsing module <seven_seg_3>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_8.v" into library work
+Parsing module <reset_conditioner_8>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_7.v" into library work
+Parsing module <regfiles_7>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_5.v" into library work
+Parsing module <statemachine_5>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_9.v" into library work
+Parsing module <edge_detector_9>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_10.v" into library work
+Parsing module <button_conditioner_10>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/alu_1.v" into library work
+Parsing module <alu_1>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <alu_1>.
+
+Elaborating module <adder_16bit_11>.
+
+Elaborating module <adder_16bit_1_22>.
+
+Elaborating module <adder_16bit_2_23>.
+
+Elaborating module <boolean_16bit_12>.
+
+Elaborating module <shifter_16bit_13>.
+
+Elaborating module <compare16bit_14>.
+
+Elaborating module <multiply_16bit_15>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 49: Assignment to M_alu1_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 50: Assignment to M_alu1_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 51: Assignment to M_alu1_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 66: Assignment to M_alu2_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 67: Assignment to M_alu2_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 68: Assignment to M_alu2_v ignored, since the identifier is never used
+
+Elaborating module <seven_seg_3>.
+
+Elaborating module <statemachine_5>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 148: Assignment to M_ctl2_toreg ignored, since the identifier is never used
+
+Elaborating module <regfiles_7>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 198: Assignment to M_reg_tob2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 200: Assignment to M_reg_lane1p1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 201: Assignment to M_reg_lane2p1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 202: Assignment to M_reg_lane3p1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 203: Assignment to M_reg_lane1p2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 204: Assignment to M_reg_lane2p2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 205: Assignment to M_reg_lane3p2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 207: Assignment to M_reg_p2num ignored, since the identifier is never used
+
+Elaborating module <reset_conditioner_8>.
+
+Elaborating module <edge_detector_9>.
+
+Elaborating module <button_conditioner_10>.
+
+Elaborating module <pipeline_21>.
+WARNING:HDLCompiler:413 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 320: Result of 16-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 44: Output port <z> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 44: Output port <n> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 44: Output port <v> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 61: Output port <z> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 61: Output port <n> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 61: Output port <v> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 133: Output port <toreg> of the instance <ctl2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <tob2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane1p1> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane2p1> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane3p1> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane1p2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane2p2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <lane3p2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 179: Output port <p2num> of the instance <L_reg> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 232
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 232
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 232
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 232
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 232
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 232
+    Summary:
+	inferred   6 Tristate(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <alu_1>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/alu_1.v".
+    Found 16-bit 4-to-1 multiplexer for signal <s> created at line 11.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <alu_1> synthesized.
+
+Synthesizing Unit <adder_16bit_11>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_11.v".
+    Summary:
+	no macro.
+Unit <adder_16bit_11> synthesized.
+
+Synthesizing Unit <adder_16bit_1_22>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_22.v".
+    Found 16-bit subtractor for signal <a[15]_b[15]_sub_5_OUT> created at line 22.
+    Found 16-bit adder for signal <a[15]_b[15]_add_1_OUT> created at line 19.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <adder_16bit_1_22> synthesized.
+
+Synthesizing Unit <adder_16bit_2_23>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_23.v".
+    Summary:
+Unit <adder_16bit_2_23> synthesized.
+
+Synthesizing Unit <boolean_16bit_12>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_12.v".
+    Summary:
+	inferred  13 Multiplexer(s).
+Unit <boolean_16bit_12> synthesized.
+
+Synthesizing Unit <shifter_16bit_13>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_13.v".
+    Found 16-bit shifter arithmetic right for signal <a[15]_b[3]_shift_right_1_OUT> created at line 19
+    Found 16-bit shifter logical right for signal <a[15]_b[3]_shift_right_4_OUT> created at line 22
+    Found 16-bit shifter logical left for signal <a[15]_b[3]_shift_left_7_OUT> created at line 25
+    Found 16-bit 4-to-1 multiplexer for signal <s> created at line 11.
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shifter_16bit_13> synthesized.
+
+Synthesizing Unit <compare16bit_14>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_14.v".
+WARNING:Xst:647 - Input <alufn<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <alufn<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 4-to-1 multiplexer for signal <s<0>> created at line 12.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <compare16bit_14> synthesized.
+
+Synthesizing Unit <multiply_16bit_15>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_15.v".
+    Found 16x16-bit multiplier for signal <n0003> created at line 16.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <multiply_16bit_15> synthesized.
+
+Synthesizing Unit <seven_seg_3>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/seven_seg_3.v".
+    Found 16x7-bit Read Only RAM for signal <segs>
+    Summary:
+	inferred   1 RAM(s).
+Unit <seven_seg_3> synthesized.
+
+Synthesizing Unit <statemachine_5>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_5.v".
+    Found 4-bit register for signal <M_state_q>.
+    Found finite state machine <FSM_0> for signal <M_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 28                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 19                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <statemachine_5> synthesized.
+
+Synthesizing Unit <regfiles_7>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_7.v".
+    Found 16-bit register for signal <M_r2_q>.
+    Found 16-bit register for signal <M_r3_q>.
+    Found 16-bit register for signal <M_r4_q>.
+    Found 16-bit register for signal <M_r5_q>.
+    Found 16-bit register for signal <M_r6_q>.
+    Found 16-bit register for signal <M_r7_q>.
+    Found 16-bit register for signal <M_r8_q>.
+    Found 16-bit register for signal <M_r9_q>.
+    Found 16-bit register for signal <M_r10_q>.
+    Found 16-bit register for signal <M_r11_q>.
+    Found 16-bit register for signal <M_r12_q>.
+    Found 16-bit register for signal <M_r1_q>.
+    Found 16-bit 8-to-1 multiplexer for signal <a1> created at line 117.
+    Found 16-bit 8-to-1 multiplexer for signal <a2> created at line 138.
+    Found 16-bit 7-to-1 multiplexer for signal <fsmport1> created at line 159.
+    Found 16-bit 7-to-1 multiplexer for signal <fsmport2> created at line 180.
+    Summary:
+	inferred 192 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <regfiles_7> synthesized.
+
+Synthesizing Unit <reset_conditioner_8>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_8.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_8> synthesized.
+
+Synthesizing Unit <edge_detector_9>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_9.v".
+    Found 1-bit register for signal <M_last_q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <edge_detector_9> synthesized.
+
+Synthesizing Unit <button_conditioner_10>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_10.v".
+    Found 20-bit register for signal <M_ctr_q>.
+    Found 20-bit adder for signal <M_ctr_q[19]_GND_16_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <button_conditioner_10> synthesized.
+
+Synthesizing Unit <pipeline_21>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_21.v".
+    Found 2-bit register for signal <M_pipe_q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pipeline_21> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 2
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 3
+ 16-bit addsub                                         : 2
+ 20-bit adder                                          : 1
+# Registers                                            : 16
+ 1-bit register                                        : 1
+ 16-bit register                                       : 12
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 42
+ 16-bit 4-to-1 multiplexer                             : 4
+ 16-bit 7-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 2
+# Logic shifters                                       : 6
+ 16-bit shifter arithmetic right                       : 2
+ 16-bit shifter logical left                           : 2
+ 16-bit shifter logical right                          : 2
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 4
+ 16-bit xor2                                           : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <button_conditioner_10>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <button_conditioner_10> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_seg_3>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <char>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segs>          |          |
+    -----------------------------------------------------------------------
+Unit <seven_seg_3> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 2
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 2
+ 16-bit addsub                                         : 2
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 199
+ Flip-Flops                                            : 199
+# Multiplexers                                         : 118
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 32
+ 1-bit 8-to-1 multiplexer                              : 32
+ 16-bit 2-to-1 multiplexer                             : 42
+ 16-bit 4-to-1 multiplexer                             : 4
+# Logic shifters                                       : 6
+ 16-bit shifter arithmetic right                       : 2
+ 16-bit shifter logical left                           : 2
+ 16-bit shifter logical right                          : 2
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 4
+ 16-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <M_r3_q_1> in Unit <regfiles_7> is equivalent to the following 13 FFs/Latches, which will be removed : <M_r3_q_3> <M_r3_q_4> <M_r3_q_5> <M_r3_q_6> <M_r3_q_7> <M_r3_q_8> <M_r3_q_9> <M_r3_q_10> <M_r3_q_11> <M_r3_q_12> <M_r3_q_13> <M_r3_q_14> <M_r3_q_15> 
+WARNING:Xst:1293 - FF/Latch <M_r3_q_1> has a constant value of 0 in block <regfiles_7>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:15]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:15]> with one-hot encoding.
+--------------------------
+ State | Encoding
+--------------------------
+ 0000  | 000000000000001
+ 0001  | 000000000000010
+ 0010  | 000000000000100
+ 0011  | 000000000001000
+ 0100  | 000000000010000
+ 0101  | 000000000100000
+ 0110  | 000000001000000
+ 0111  | 000000010000000
+ 1000  | 000000100000000
+ 1001  | 000001000000000
+ 1010  | 000010000000000
+ 1011  | 000100000000000
+ 1100  | 001000000000000
+ 1101  | 010000000000000
+ 1110  | 100000000000000
+--------------------------
+
+Optimizing unit <mojo_top_0> ...
+
+Optimizing unit <regfiles_7> ...
+
+Optimizing unit <alu_1> ...
+WARNING:Xst:1293 - FF/Latch <L_reg/M_r6_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r6_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r11_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r5_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r4_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r8_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r12_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r9_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_1> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_2> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_3> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_4> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_5> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_6> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_7> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_8> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_9> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_10> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_11> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_12> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_13> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_14> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r7_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <L_reg/M_r3_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <L_reg/M_r3_q_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
+FlipFlop L_reg/M_r3_q_2 has been replicated 2 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd10 has been replicated 1 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd11 has been replicated 1 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd4 has been replicated 2 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd8 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd10 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd11 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd4 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd8 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+	Found 2-bit shift register for signal <condAdd1/sync/M_pipe_q_1>.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 129
+ Flip-Flops                                            : 129
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mojo_top_0.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 542
+#      GND                         : 8
+#      INV                         : 4
+#      LUT1                        : 19
+#      LUT2                        : 21
+#      LUT3                        : 62
+#      LUT4                        : 29
+#      LUT5                        : 36
+#      LUT6                        : 250
+#      MUXCY                       : 49
+#      MUXF7                       : 7
+#      VCC                         : 5
+#      XORCY                       : 52
+# FlipFlops/Latches                : 130
+#      FD                          : 1
+#      FDE                         : 1
+#      FDR                         : 49
+#      FDRE                        : 73
+#      FDS                         : 6
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 10
+#      OBUF                        : 22
+#      OBUFT                       : 6
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             130  out of  11440     1%  
+ Number of Slice LUTs:                  422  out of   5720     7%  
+    Number used as Logic:               421  out of   5720     7%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    503
+   Number with an unused Flip Flop:     373  out of    503    74%  
+   Number with an unused LUT:            81  out of    503    16%  
+   Number of fully used LUT-FF pairs:    49  out of    503     9%  
+   Number of unique control sets:        24
+
+IO Utilization: 
+ Number of IOs:                          45
+ Number of bonded IOBs:                  39  out of    102    38%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 131   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.236ns (Maximum Frequency: 108.272MHz)
+   Minimum input arrival time before clock: 6.095ns
+   Maximum output required time after clock: 5.919ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.236ns (frequency: 108.272MHz)
+  Total number of paths / destination ports: 42021 / 326
+-------------------------------------------------------------------------
+Delay:               9.236ns (Levels of Logic = 8)
+  Source:            ctl2/M_state_q_FSM_FFd5_2 (FF)
+  Destination:       L_reg/M_r10_q_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ctl2/M_state_q_FSM_FFd5_2 to L_reg/M_r10_q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.525   1.410  M_state_q_FSM_FFd5_2 (M_state_q_FSM_FFd5_2)
+     end scope: 'ctl2:M_state_q_FSM_FFd5_1'
+     begin scope: 'L_reg:M_state_q_FSM_FFd5_1'
+     LUT6:I3->O           11   0.235   1.038  mux31111 (a2<9>)
+     end scope: 'L_reg:a2<9>'
+     begin scope: 'alu2:a<9>'
+     begin scope: 'alu2/mul:a<9>'
+     DSP48A1:B9->M0        1   3.894   0.682  Mmult_n0003 (s<0>)
+     end scope: 'alu2/mul:s<0>'
+     LUT6:I5->O            3   0.254   0.874  Mmux_s29 (s<0>)
+     end scope: 'alu2:s<0>'
+     begin scope: 'L_reg:alu2<0>'
+     LUT6:I4->O            1   0.250   0.000  Mmux_M_r10_d18 (M_r10_d<0>)
+     FDRE:D                    0.074          M_r10_q_0
+    ----------------------------------------
+    Total                      9.236ns (5.232ns logic, 4.004ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 45 / 27
+-------------------------------------------------------------------------
+Offset:              6.095ns (Levels of Logic = 6)
+  Source:            clr2 (PAD)
+  Destination:       ctl2/M_state_q_FSM_FFd13 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr2 to ctl2/M_state_q_FSM_FFd13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.912  clr2_IBUF (clr2_IBUF)
+     begin scope: 'ctl2:clrbt'
+     LUT3:I1->O            3   0.250   0.994  M_state_q_FSM_FFd13-In31 (M_state_q_FSM_FFd13-In2)
+     LUT5:I2->O            1   0.235   1.112  M_state_q_FSM_FFd13-In1 (M_state_q_FSM_FFd13-In1)
+     LUT6:I1->O            1   0.254   0.682  M_state_q_FSM_FFd13-In2 (M_state_q_FSM_FFd13-In3)
+     LUT2:I1->O            1   0.254   0.000  M_state_q_FSM_FFd13-In4 (M_state_q_FSM_FFd13-In)
+     FDR:D                     0.074          M_state_q_FSM_FFd13
+    ----------------------------------------
+    Total                      6.095ns (2.395ns logic, 3.700ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.919ns (Levels of Logic = 4)
+  Source:            L_reg/M_r3_q_2 (FF)
+  Destination:       p1display<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: L_reg/M_r3_q_2 to p1display<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            31   0.525   1.502  M_r3_q_2 (M_r3_q_2)
+     end scope: 'L_reg:goalreg<2>'
+     begin scope: 'seven_seg11:char<2>'
+     INV:I->O              2   0.255   0.725  Mram_segs111_INV_0 (segs<4>)
+     end scope: 'seven_seg11:segs<4>'
+     OBUF:I->O                 2.912          p1display_1_OBUF (p1display<1>)
+    ----------------------------------------
+    Total                      5.919ns (3.692ns logic, 2.227ns route)
+                                       (62.4% logic, 37.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.236|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.21 secs
+ 
+--> 
+
+Total memory usage is 4512868 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  151 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

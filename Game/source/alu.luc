@@ -42,9 +42,9 @@ module alu (
     
     //COMPARE
     compare.alufn[5:0] = alufn[5:0];
-    compare.z = adder2.z;
-    compare.v = adder2.v;
-    compare.n = adder2.n;
+    compare.z = adder.z;
+    compare.v = adder.v;
+    compare.n = adder.n;
     
     
     //Choosing output
