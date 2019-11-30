@@ -23,7 +23,8 @@ module mojo_top (
     input clr2,
     
     output p1display[7],
-    output p2display[7]
+    output p2display[7],
+    output lane1a[5]
 
   ) {
   
@@ -31,8 +32,10 @@ module mojo_top (
   
   alu alu1;
   alu alu2;
-  seven_seg seven_seg11;
-  seven_seg seven_seg2;
+  // seven_seg seven_seg11;
+  // seven_seg seven_seg2;
+  dual_seven_seg_2 seven_seg11;
+  
   statemachine ctl1;
   statemachine ctl2;
   regfiles reg;
@@ -43,6 +46,10 @@ module mojo_top (
     reset_conditioner reset_cond;
     edge_detector edgeAdd1 (#RISE(1), #FALL(0));
     button_conditioner condAdd1;
+    edge_detector edgeSub1 (#RISE(1), #FALL(0));
+    button_conditioner condSub1;
+    // edge_detector edgeMul2 (#RISE(1), #FALL(0));
+    // button_conditioner condMul2;
   }
   
   always {
@@ -57,11 +64,17 @@ module mojo_top (
     condAdd1.in = add1;
     edgeAdd1.in = condAdd1.out;
     
+    condSub1.in = sub1;
+    edgeSub1.in = condSub1.out;
+    
+    // condMul2.in = mul2;
+    // edgeMul2.in = condMul2.out;
+    
     ctl1.clk = clk;
     ctl1.rst = rst;
     ctl1.startbt = start;
     ctl1.addbt = edgeAdd1.out;
-    ctl1.subbt = sub1;
+    ctl1.subbt = edgeSub1.out;
     ctl1.mulbt = mul1;
     ctl1.clrbt = clr1;
     ctl1.fromreg = reg.fsmport1;
@@ -111,11 +124,19 @@ module mojo_top (
     reg.ra2 = ctl2.ra;
     reg.alu2 = alu2.s;
     
-    seven_seg11.char = reg.goalreg[3:0];
-    seven_seg2.char = reg.p1num[3:0];
+    // seven_seg11.char = reg.goalreg[3:0];
+    // seven_seg2.char = reg.p1num[3:0];
+    seven_seg11.char = reg.p1num;
     
-    p1display = seven_seg11.segs;
-    p2display = seven_seg2.segs;
+    // p1display = seven_seg11.segs;
+    // p2display = seven_seg2.segs;
+    
+    p1display = seven_seg11.segs1;
+    p2display = seven_seg11.segs2;
+    
+    
+    
+    lane1a[4:0] = reg.lane1p1[4:0];
     
     led[0] = reg.tob1;
   }

@@ -27,7 +27,8 @@ module mojo_top_0 (
     input mul2,
     input clr2,
     output reg [6:0] p1display,
-    output reg [6:0] p2display
+    output reg [6:0] p2display,
+    output reg [4:0] lane1a
   );
   
   
@@ -68,18 +69,13 @@ module mojo_top_0 (
     .v(M_alu2_v)
   );
   
-  wire [7-1:0] M_seven_seg11_segs;
-  reg [4-1:0] M_seven_seg11_char;
-  seven_seg_3 seven_seg11 (
+  wire [7-1:0] M_seven_seg11_segs1;
+  wire [7-1:0] M_seven_seg11_segs2;
+  reg [16-1:0] M_seven_seg11_char;
+  dual_seven_seg_2_3 seven_seg11 (
     .char(M_seven_seg11_char),
-    .segs(M_seven_seg11_segs)
-  );
-  
-  wire [7-1:0] M_seven_seg2_segs;
-  reg [4-1:0] M_seven_seg2_char;
-  seven_seg_3 seven_seg2 (
-    .char(M_seven_seg2_char),
-    .segs(M_seven_seg2_segs)
+    .segs1(M_seven_seg11_segs1),
+    .segs2(M_seven_seg11_segs2)
   );
   
   wire [3-1:0] M_ctl1_ra;
@@ -97,7 +93,7 @@ module mojo_top_0 (
   reg [1-1:0] M_ctl1_startbt;
   reg [1-1:0] M_ctl1_clrbt;
   reg [16-1:0] M_ctl1_fromreg;
-  statemachine_5 ctl1 (
+  statemachine_4 ctl1 (
     .clk(M_ctl1_clk),
     .rst(M_ctl1_rst),
     .addbt(M_ctl1_addbt),
@@ -130,7 +126,7 @@ module mojo_top_0 (
   reg [1-1:0] M_ctl2_startbt;
   reg [1-1:0] M_ctl2_clrbt;
   reg [16-1:0] M_ctl2_fromreg;
-  statemachine_5 ctl2 (
+  statemachine_4 ctl2 (
     .clk(M_ctl2_clk),
     .rst(M_ctl2_rst),
     .addbt(M_ctl2_addbt),
@@ -176,7 +172,7 @@ module mojo_top_0 (
   reg [16-1:0] M_reg_fsm1;
   reg [16-1:0] M_reg_alu1;
   reg [16-1:0] M_reg_alu2;
-  regfiles_7 L_reg (
+  regfiles_6 L_reg (
     .clk(M_reg_clk),
     .rst(M_reg_rst),
     .asel1(M_reg_asel1),
@@ -209,24 +205,38 @@ module mojo_top_0 (
   
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_8 reset_cond (
+  reset_conditioner_7 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
   wire [1-1:0] M_edgeAdd1_out;
   reg [1-1:0] M_edgeAdd1_in;
-  edge_detector_9 edgeAdd1 (
+  edge_detector_8 edgeAdd1 (
     .clk(clk),
     .in(M_edgeAdd1_in),
     .out(M_edgeAdd1_out)
   );
   wire [1-1:0] M_condAdd1_out;
   reg [1-1:0] M_condAdd1_in;
-  button_conditioner_10 condAdd1 (
+  button_conditioner_9 condAdd1 (
     .clk(clk),
     .in(M_condAdd1_in),
     .out(M_condAdd1_out)
+  );
+  wire [1-1:0] M_edgeSub1_out;
+  reg [1-1:0] M_edgeSub1_in;
+  edge_detector_8 edgeSub1 (
+    .clk(clk),
+    .in(M_edgeSub1_in),
+    .out(M_edgeSub1_out)
+  );
+  wire [1-1:0] M_condSub1_out;
+  reg [1-1:0] M_condSub1_in;
+  button_conditioner_9 condSub1 (
+    .clk(clk),
+    .in(M_condSub1_in),
+    .out(M_condSub1_out)
   );
   
   always @* begin
@@ -238,11 +248,13 @@ module mojo_top_0 (
     avr_rx = 1'bz;
     M_condAdd1_in = add1;
     M_edgeAdd1_in = M_condAdd1_out;
+    M_condSub1_in = sub1;
+    M_edgeSub1_in = M_condSub1_out;
     M_ctl1_clk = clk;
     M_ctl1_rst = rst;
     M_ctl1_startbt = start;
     M_ctl1_addbt = M_edgeAdd1_out;
-    M_ctl1_subbt = sub1;
+    M_ctl1_subbt = M_edgeSub1_out;
     M_ctl1_mulbt = mul1;
     M_ctl1_clrbt = clr1;
     M_ctl1_fromreg = M_reg_fsmport1;
@@ -313,10 +325,10 @@ module mojo_top_0 (
     M_reg_we2 = M_ctl2_we;
     M_reg_ra2 = M_ctl2_ra;
     M_reg_alu2 = M_alu2_s;
-    M_seven_seg11_char = M_reg_goalreg[0+3-:4];
-    M_seven_seg2_char = M_reg_p1num[0+3-:4];
-    p1display = M_seven_seg11_segs;
-    p2display = M_seven_seg2_segs;
+    M_seven_seg11_char = M_reg_p1num;
+    p1display = M_seven_seg11_segs1;
+    p2display = M_seven_seg11_segs2;
+    lane1a[0+4-:5] = M_reg_lane1p1[0+4-:5];
     led[0+0-:1] = M_reg_tob1;
   end
 endmodule

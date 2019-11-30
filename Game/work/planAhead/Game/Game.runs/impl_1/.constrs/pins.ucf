@@ -4,6 +4,9 @@ NET "start" PULLDOWN;
 NET "add1" LOC = P123;
 NET "add1" IOSTANDARD = LVTTL;
 NET "add1" PULLDOWN;
+NET "sub1" LOC = P126;
+NET "sub1" IOSTANDARD = LVTTL;
+NET "sub1" PULLDOWN;
 
 NET "p1display[0]" LOC = P111;
 NET "p1display[0]" IOSTANDARD = LVTTL;
@@ -41,3 +44,14 @@ NET "p2display[5]" LOC = P30;
 NET "p2display[5]" IOSTANDARD = LVTTL;
 NET "p2display[6]" LOC = P32;
 NET "p2display[6]" IOSTANDARD = LVTTL;
+
+NET "lane1a[0]" LOC = P74;
+NET "lane1a[0]" IOSTANDARD = LVTTL;
+NET "lane1a[1]" LOC = P75;
+NET "lane1a[1]" IOSTANDARD = LVTTL;
+NET "lane1a[2]" LOC = P78;
+NET "lane1a[2]" IOSTANDARD = LVTTL;
+NET "lane1a[3]" LOC = P79;
+NET "lane1a[3]" IOSTANDARD = LVTTL;
+NET "lane1a[4]" LOC = P80;
+NET "lane1a[4]" IOSTANDARD = LVTTL;
