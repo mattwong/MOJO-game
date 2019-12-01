@@ -1,0 +1,23 @@
+module random_problem (
+    input clk,  // clock
+    input rst,  // reset
+    input next,
+    output num[16]
+  ) {
+  
+  pn_gen rng;
+
+  always {
+    rng.clk = clk;
+    rng.rst = rst;
+    rng.seed = 44444;
+    rng.next = next;
+    
+    if (rng.num > 99){
+      num = rng.num[5:0];
+    }
+    else {
+      num = rng.num[6:0];
+      }
+  }
+}

@@ -24,12 +24,11 @@ module statemachine (
     }
   }
   
-  pn_gen rng;
-
+  random_problem rng;
+  
   always {
     rng.clk = clk;
     rng.rst = rst;
-    rng.seed = 44444;
     rng.next = 0;
     alufn = 000000;
     ra = 000;
@@ -48,10 +47,7 @@ module statemachine (
         we = 1;
         wa = b001; 
         rng.next = 1;
-        if (rng.num > 99){
-          toreg = rng.num[5:0];}
-        else{
-        toreg = rng.num[6:0];}
+        toreg = rng.num;
         state.d = state.PROB;
         
       state.PROB:  

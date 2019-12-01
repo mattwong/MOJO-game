@@ -13,6 +13,7 @@ module regfiles (
     input ra2[3],
     
     input fsm1[16],  //from fsm
+    input fsm2[16],  //from fsm
     input alu1[16],  //from ALU
     input alu2[16],  //from ALU
     
@@ -84,6 +85,7 @@ module regfiles (
     if (we2){
       case(wa2){
           b000 : r2.d = alu2;
+          b001 : r3.d = fsm2;
           b010 : r7.d = alu2;
           b011 : r8.d = alu2;
           b100 : r9.d = alu2;

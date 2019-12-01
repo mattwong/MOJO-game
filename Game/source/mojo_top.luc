@@ -123,6 +123,7 @@ module mojo_top (
     reg.we2 = ctl2.we;
     reg.ra2 = ctl2.ra;
     reg.alu2 = alu2.s;
+    reg.fsm2 = ctl2.toreg;
     
     // seven_seg11.char = reg.goalreg[3:0];
     // seven_seg2.char = reg.p1num[3:0];
