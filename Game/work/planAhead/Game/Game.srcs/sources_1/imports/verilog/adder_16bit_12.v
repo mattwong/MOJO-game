@@ -20,7 +20,7 @@ module adder_16bit_12 (
   reg [16-1:0] M_adder1_a;
   reg [16-1:0] M_adder1_b;
   reg [1-1:0] M_adder1_alufn;
-  adder_16bit_1_24 adder1 (
+  adder_16bit_1_26 adder1 (
     .a(M_adder1_a),
     .b(M_adder1_b),
     .alufn(M_adder1_alufn),
@@ -34,7 +34,7 @@ module adder_16bit_12 (
   reg [1-1:0] M_adder2_b;
   reg [1-1:0] M_adder2_alufn;
   reg [16-1:0] M_adder2_s;
-  adder_16bit_2_25 adder2 (
+  adder_16bit_2_27 adder2 (
     .a(M_adder2_a),
     .b(M_adder2_b),
     .alufn(M_adder2_alufn),

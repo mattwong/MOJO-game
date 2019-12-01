@@ -159,6 +159,7 @@ module mojo_top_0 (
   wire [16-1:0] M_reg_lane3p2;
   wire [16-1:0] M_reg_p1num;
   wire [16-1:0] M_reg_p2num;
+  wire [16-1:0] M_reg_lanereg;
   reg [1-1:0] M_reg_clk;
   reg [1-1:0] M_reg_rst;
   reg [3-1:0] M_reg_asel1;
@@ -200,7 +201,8 @@ module mojo_top_0 (
     .lane2p2(M_reg_lane2p2),
     .lane3p2(M_reg_lane3p2),
     .p1num(M_reg_p1num),
-    .p2num(M_reg_p2num)
+    .p2num(M_reg_p2num),
+    .lanereg(M_reg_lanereg)
   );
   
   wire [1-1:0] M_reset_cond_out;
@@ -329,6 +331,6 @@ module mojo_top_0 (
     p1display = M_seven_seg11_segs1;
     p2display = M_seven_seg11_segs2;
     lane1a[0+4-:5] = M_reg_lane1p1[0+4-:5];
-    led[0+0-:1] = M_reg_tob1;
+    led[0+4-:5] = M_reg_lane2p1[0+4-:5];
   end
 endmodule

@@ -42,9 +42,26 @@ module statemachine_4 (
   
   reg [3:0] M_state_d, M_state_q = IDLE_state;
   
+  wire [32-1:0] M_rng_num;
+  reg [1-1:0] M_rng_clk;
+  reg [1-1:0] M_rng_rst;
+  reg [1-1:0] M_rng_next;
+  reg [32-1:0] M_rng_seed;
+  pn_gen_22 rng (
+    .clk(M_rng_clk),
+    .rst(M_rng_rst),
+    .next(M_rng_next),
+    .seed(M_rng_seed),
+    .num(M_rng_num)
+  );
+  
   always @* begin
     M_state_d = M_state_q;
     
+    M_rng_clk = clk;
+    M_rng_rst = rst;
+    M_rng_seed = 16'had9c;
+    M_rng_next = 1'h0;
     alufn = 1'h0;
     ra = 1'h0;
     bsel = 1'h0;
@@ -62,7 +79,12 @@ module statemachine_4 (
       SELPROB_state: begin
         we = 1'h1;
         wa = 3'h1;
-        toreg = 16'h0010;
+        M_rng_next = 1'h1;
+        if (M_rng_num > 7'h63) begin
+          toreg = M_rng_num[0+5-:6];
+        end else begin
+          toreg = M_rng_num[0+6-:7];
+        end
         M_state_d = PROB_state;
       end
       PROB_state: begin
@@ -146,10 +168,10 @@ module statemachine_4 (
         wa = 3'h2;
         asel = 3'h2;
         ra = 3'h2;
-        if (fromreg == 5'h10) begin
+        if (fromreg == 4'h8) begin
           M_state_d = CHGLN_state;
         end else begin
-          M_state_d = PROB_state;
+          M_state_d = SELPROB_state;
         end
       end
       MOVELN2_state: begin
@@ -159,10 +181,10 @@ module statemachine_4 (
         wa = 3'h3;
         asel = 3'h3;
         ra = 3'h3;
-        if (fromreg == 5'h10) begin
+        if (fromreg == 4'h8) begin
           M_state_d = CHGLN_state;
         end else begin
-          M_state_d = PROB_state;
+          M_state_d = SELPROB_state;
         end
       end
       MOVELN3_state: begin
@@ -172,10 +194,10 @@ module statemachine_4 (
         wa = 3'h4;
         asel = 3'h4;
         ra = 3'h4;
-        if (fromreg == 5'h10) begin
+        if (fromreg == 4'h8) begin
           M_state_d = END_state;
         end else begin
-          M_state_d = PROB_state;
+          M_state_d = SELPROB_state;
         end
       end
       CHGLN_state: begin
@@ -184,7 +206,7 @@ module statemachine_4 (
         we = 1'h1;
         wa = 3'h6;
         asel = 3'h6;
-        M_state_d = PROB_state;
+        M_state_d = SELPROB_state;
       end
     endcase
   end

@@ -32,7 +32,8 @@ module regfiles_6 (
     output reg [15:0] lane2p2,
     output reg [15:0] lane3p2,
     output reg [15:0] p1num,
-    output reg [15:0] p2num
+    output reg [15:0] p2num,
+    output reg [15:0] lanereg
   );
   
   
@@ -49,21 +50,32 @@ module regfiles_6 (
   reg [15:0] M_r10_d, M_r10_q = 1'h0;
   reg [15:0] M_r11_d, M_r11_q = 1'h0;
   reg [15:0] M_r12_d, M_r12_q = 1'h0;
+  reg [0:0] M_x_d, M_x_q = 1'h0;
   
   always @* begin
-    M_r10_d = M_r10_q;
     M_r2_d = M_r2_q;
     M_r3_d = M_r3_q;
     M_r4_d = M_r4_q;
-    M_r12_d = M_r12_q;
     M_r5_d = M_r5_q;
-    M_r11_d = M_r11_q;
     M_r6_d = M_r6_q;
     M_r7_d = M_r7_q;
     M_r8_d = M_r8_q;
     M_r9_d = M_r9_q;
+    M_r10_d = M_r10_q;
+    M_r12_d = M_r12_q;
+    M_r11_d = M_r11_q;
+    M_x_d = M_x_q;
     M_r1_d = M_r1_q;
     
+    if (M_x_q == 1'h0) begin
+      M_r4_d = 1'h1;
+      M_r5_d = 1'h1;
+      M_r6_d = 1'h1;
+      M_r7_d = 1'h1;
+      M_r8_d = 1'h1;
+      M_r9_d = 1'h1;
+      M_x_d = 1'h1;
+    end
     if (we1) begin
       
       case (wa1)
@@ -208,6 +220,7 @@ module regfiles_6 (
     lane3p2 = M_r9_q;
     tob1 = M_r11_q;
     tob2 = M_r12_q;
+    lanereg = M_r10_q;
   end
   
   always @(posedge clk) begin
@@ -224,6 +237,7 @@ module regfiles_6 (
       M_r10_q <= 1'h0;
       M_r11_q <= 1'h0;
       M_r12_q <= 1'h0;
+      M_x_q <= 1'h0;
     end else begin
       M_r1_q <= M_r1_d;
       M_r2_q <= M_r2_d;
@@ -237,6 +251,7 @@ module regfiles_6 (
       M_r10_q <= M_r10_d;
       M_r11_q <= M_r11_d;
       M_r12_q <= M_r12_d;
+      M_x_q <= M_x_d;
     end
   end
   

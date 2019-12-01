@@ -19,6 +19,7 @@
     <ucf>pins.ucf</ucf>
     <component>pipeline.luc</component>
     <component>button_conditioner.luc</component>
+    <component>pn_gen.luc</component>
     <component>reset_conditioner.luc</component>
     <component>edge_detector.luc</component>
   </files>

@@ -137,7 +137,7 @@ module mojo_top (
     
     
     lane1a[4:0] = reg.lane1p1[4:0];
+    led[4:0] = reg.lane2p1[4:0];
     
-    led[0] = reg.tob1;
   }
 }

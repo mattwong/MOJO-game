@@ -33,7 +33,9 @@ module regfiles (
     output lane2p2[16],
     output lane3p2[16],
     output p1num[16],
-    output p2num[16] 
+    output p2num[16],
+    
+    output lanereg[16]
   ) {
   
   .clk(clk){
@@ -50,10 +52,22 @@ module regfiles (
       dff r10[16];  //lanereg
       dff r11[16];  //p1cmp
       dff r12[16];  //p2cmp
+      dff x[1];
     }
   }
 
   always {
+    //set lanes at beginning
+    if (x.q==0){
+      r4.d = 1;
+      r5.d = 1;
+      r6.d = 1;
+      r7.d = 1;
+      r8.d = 1;
+      r9.d = 1;
+      x.d = 1;
+    }
+    
     //write
     if (we1){
       case(wa1){
@@ -127,5 +141,8 @@ module regfiles (
     lane3p2 = r9.q;
     tob1 = r11.q;
     tob2 = r12.q;
+    
+    //for testing
+    lanereg = r10.q;
   }
 }
