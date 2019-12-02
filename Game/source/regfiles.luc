@@ -12,6 +12,8 @@ module regfiles (
     input ra1[3],
     input ra2[3],
     
+    input reset,  //to reset regfiles back to start state
+    
     input fsm1[16],  //from fsm
     input fsm2[16],  //from fsm
     input alu1[16],  //from ALU
@@ -22,8 +24,8 @@ module regfiles (
     output fsmport1[16],  //connect to fsm
     output fsmport2[16],  //connect to fsm
     
-    output tob1[16],
-    output tob2[16],
+    output tob1[16],  //connect to BSEL mux
+    output tob2[16],  //connect to BSEL mux
     
     //for connecting to LED/7 seg
     output goalreg[16],
@@ -36,6 +38,7 @@ module regfiles (
     output p1num[16],
     output p2num[16],
     
+    //testing
     output lanereg[16]
   ) {
   
@@ -53,12 +56,12 @@ module regfiles (
       dff r10[16];  //lanereg
       dff r11[16];  //p1cmp
       dff r12[16];  //p2cmp
-      dff x[1];
+      dff x[1];  //reset variable
     }
   }
 
   always {
-    //set lanes at beginning
+    //set lanes to start state
     if (x.q==0){
       r4.d = 1;
       r5.d = 1;
@@ -67,6 +70,10 @@ module regfiles (
       r8.d = 1;
       r9.d = 1;
       x.d = 1;
+    }
+    
+    if (reset == 1){
+      x.d = 0;
     }
     
     //write

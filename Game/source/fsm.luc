@@ -13,7 +13,8 @@ module statemachine (
     output asel[3],
     output we,         //write enable
     output wa[3],      //write address
-    output toreg[16]
+    output toreg[16],  //write data to registers
+    output reset       //reset signal for registers
   ) {
   
   .clk(clk) {
@@ -37,9 +38,11 @@ module statemachine (
     we = 0;
     wa = 0;
     toreg = 0;
+    reset = 0;
     
     case(state.q){
       state.IDLE:
+        reset = 1;
         if (startbt == 1)
           state.d = state.SELPROB;
           
@@ -159,6 +162,11 @@ module statemachine (
         wa = b110;
         asel = b110;
         state.d = state.SELPROB;
+        
+      state.END:
+        if (startbt == 1){
+          state.d = state.IDLE;
+        }  
               
     }
   }
