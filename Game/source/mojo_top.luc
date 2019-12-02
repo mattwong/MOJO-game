@@ -22,8 +22,9 @@ module mojo_top (
     input mul2,
     input clr2,
     
-    output p1display[7],
-    output p2display[7],
+    output p1display[14],
+    //output p2display[14],
+    output goaldisplay[14],
     output lane1a[5]
 
   ) {
@@ -32,9 +33,9 @@ module mojo_top (
   
   alu alu1;
   alu alu2;
-  // seven_seg seven_seg11;
-  // seven_seg seven_seg2;
-  dual_seven_seg_2 seven_seg11;
+  
+  dual_seven_seg seven_seg_p;
+  dual_seven_seg seven_seg11;
   
   statemachine ctl1;
   statemachine ctl2;
@@ -48,8 +49,10 @@ module mojo_top (
     button_conditioner condAdd1;
     edge_detector edgeSub1 (#RISE(1), #FALL(0));
     button_conditioner condSub1;
-    // edge_detector edgeMul2 (#RISE(1), #FALL(0));
-    // button_conditioner condMul2;
+    edge_detector edgeMul1 (#RISE(1), #FALL(0));
+    button_conditioner condMul1;
+    edge_detector edgeClr1 (#RISE(1), #FALL(0));
+    button_conditioner condClr1;
   }
   
   always {
@@ -67,16 +70,19 @@ module mojo_top (
     condSub1.in = sub1;
     edgeSub1.in = condSub1.out;
     
-    // condMul2.in = mul2;
-    // edgeMul2.in = condMul2.out;
+    condMul1.in = mul1;
+    edgeMul1.in = condMul1.out;
+    
+    condClr1.in = clr1;
+    edgeClr1.in = condClr1.out;
     
     ctl1.clk = clk;
     ctl1.rst = rst;
     ctl1.startbt = start;
     ctl1.addbt = edgeAdd1.out;
     ctl1.subbt = edgeSub1.out;
-    ctl1.mulbt = mul1;
-    ctl1.clrbt = clr1;
+    ctl1.mulbt = edgeMul1.out;
+    ctl1.clrbt = edgeClr1.out;
     ctl1.fromreg = reg.fsmport1;
     
     ctl2.clk = clk;
@@ -126,16 +132,14 @@ module mojo_top (
     reg.fsm2 = ctl2.toreg;
     reg.reset = ctl1.reset;
     
-    // seven_seg11.char = reg.goalreg[3:0];
-    // seven_seg2.char = reg.p1num[3:0];
     seven_seg11.char = reg.p1num;
+    seven_seg_p.char = reg.goalreg;
     
-    // p1display = seven_seg11.segs;
-    // p2display = seven_seg2.segs;
+    goaldisplay[6:0] = seven_seg_p.segs1;
+    goaldisplay[13:7] = seven_seg_p.segs2;
     
-    p1display = seven_seg11.segs1;
-    p2display = seven_seg11.segs2;
-    
+    p1display[13:7] = seven_seg11.segs1;
+    p1display[6:0] = seven_seg11.segs2;
     
     
     lane1a[4:0] = reg.lane1p1[4:0];

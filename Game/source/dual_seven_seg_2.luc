@@ -1,4 +1,4 @@
-module dual_seven_seg_2 (
+module dual_seven_seg (
     input char[16],
     output segs1[7],
     output segs2[7]

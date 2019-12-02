@@ -9,7 +9,6 @@
     <src top="true">mojo_top.luc</src>
     <src>random_problem.luc</src>
     <src>regfiles.luc</src>
-    <src>dual_seven_seg.luc</src>
     <src>shifter_16bit.luc</src>
     <src>adder_16bit_1.luc</src>
     <src>seven_seg.luc</src>
