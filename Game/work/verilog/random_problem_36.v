@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module random_problem_27 (
+module random_problem_36 (
     input clk,
     input rst,
     input next,
@@ -18,7 +18,7 @@ module random_problem_27 (
   reg [1-1:0] M_rng_rst;
   reg [1-1:0] M_rng_next;
   reg [32-1:0] M_rng_seed;
-  pn_gen_37 rng (
+  pn_gen_50 rng (
     .clk(M_rng_clk),
     .rst(M_rng_rst),
     .next(M_rng_next),

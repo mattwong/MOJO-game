@@ -53,38 +53,38 @@ Netlist Hierarchy                  : rebuilt
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pn_gen_37.v" into library work
-Parsing module <pn_gen_37>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_34.v" into library work
-Parsing module <adder_16bit_2_34>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_33.v" into library work
-Parsing module <adder_16bit_1_33>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_19.v" into library work
-Parsing module <shifter_16bit_19>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/random_problem_27.v" into library work
-Parsing module <random_problem_27>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_29.v" into library work
-Parsing module <pipeline_29>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_21.v" into library work
-Parsing module <multiply_16bit_21>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_20.v" into library work
-Parsing module <compare16bit_20>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_18.v" into library work
-Parsing module <boolean_16bit_18>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_17.v" into library work
-Parsing module <adder_16bit_17>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_8.v" into library work
-Parsing module <reset_conditioner_8>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_7.v" into library work
-Parsing module <regfiles_7>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_5.v" into library work
-Parsing module <statemachine_5>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_9.v" into library work
-Parsing module <edge_detector_9>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pn_gen_50.v" into library work
+Parsing module <pn_gen_50>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_47.v" into library work
+Parsing module <adder_16bit_2_47>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_46.v" into library work
+Parsing module <adder_16bit_1_46>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_28.v" into library work
+Parsing module <shifter_16bit_28>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/random_problem_36.v" into library work
+Parsing module <random_problem_36>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_38.v" into library work
+Parsing module <pipeline_38>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_30.v" into library work
+Parsing module <multiply_16bit_30>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_29.v" into library work
+Parsing module <compare16bit_29>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_27.v" into library work
+Parsing module <boolean_16bit_27>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_26.v" into library work
+Parsing module <adder_16bit_26>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_9.v" into library work
+Parsing module <reset_conditioner_9>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_8.v" into library work
+Parsing module <regfiles_8>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_6.v" into library work
+Parsing module <statemachine_6>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_10.v" into library work
+Parsing module <edge_detector_10>.
 Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/dual_seven_seg_2_3.v" into library work
 Parsing module <dual_seven_seg_3>.
-Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_10.v" into library work
-Parsing module <button_conditioner_10>.
+Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_11.v" into library work
+Parsing module <button_conditioner_11>.
 Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/alu_1.v" into library work
 Parsing module <alu_1>.
 Analyzing Verilog file "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
@@ -98,52 +98,47 @@ Elaborating module <mojo_top_0>.
 
 Elaborating module <alu_1>.
 
-Elaborating module <adder_16bit_17>.
+Elaborating module <adder_16bit_26>.
 
-Elaborating module <adder_16bit_1_33>.
+Elaborating module <adder_16bit_1_46>.
 
-Elaborating module <adder_16bit_2_34>.
+Elaborating module <adder_16bit_2_47>.
 
-Elaborating module <boolean_16bit_18>.
+Elaborating module <boolean_16bit_27>.
 
-Elaborating module <shifter_16bit_19>.
+Elaborating module <shifter_16bit_28>.
 
-Elaborating module <compare16bit_20>.
+Elaborating module <compare16bit_29>.
 
-Elaborating module <multiply_16bit_21>.
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 50: Assignment to M_alu1_z ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 51: Assignment to M_alu1_n ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 52: Assignment to M_alu1_v ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 67: Assignment to M_alu2_z ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 68: Assignment to M_alu2_n ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 69: Assignment to M_alu2_v ignored, since the identifier is never used
+Elaborating module <multiply_16bit_30>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 56: Assignment to M_alu1_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 57: Assignment to M_alu1_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 58: Assignment to M_alu1_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 73: Assignment to M_alu2_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 74: Assignment to M_alu2_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 75: Assignment to M_alu2_v ignored, since the identifier is never used
 
 Elaborating module <dual_seven_seg_3>.
 
-Elaborating module <statemachine_5>.
+Elaborating module <statemachine_6>.
 
-Elaborating module <random_problem_27>.
+Elaborating module <random_problem_36>.
 
-Elaborating module <pn_gen_37>.
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 157: Assignment to M_ctl2_reset ignored, since the identifier is never used
+Elaborating module <pn_gen_50>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 172: Assignment to M_ctl2_reset ignored, since the identifier is never used
 
-Elaborating module <regfiles_7>.
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 211: Assignment to M_reg_tob1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 212: Assignment to M_reg_tob2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 216: Assignment to M_reg_lane3p1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 217: Assignment to M_reg_lane1p2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 218: Assignment to M_reg_lane2p2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 219: Assignment to M_reg_lane3p2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 221: Assignment to M_reg_p2num ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 222: Assignment to M_reg_lanereg ignored, since the identifier is never used
+Elaborating module <regfiles_8>.
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 226: Assignment to M_reg_tob1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 227: Assignment to M_reg_tob2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 237: Assignment to M_reg_lanereg ignored, since the identifier is never used
 
-Elaborating module <reset_conditioner_8>.
+Elaborating module <reset_conditioner_9>.
 
-Elaborating module <edge_detector_9>.
+Elaborating module <edge_detector_10>.
 
-Elaborating module <button_conditioner_10>.
+Elaborating module <button_conditioner_11>.
 
-Elaborating module <pipeline_29>.
+Elaborating module <pipeline_38>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,27 +152,22 @@ WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 45: Output port <z> of the instance <alu1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 45: Output port <n> of the instance <alu1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 45: Output port <v> of the instance <alu1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 62: Output port <z> of the instance <alu2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 62: Output port <n> of the instance <alu2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 62: Output port <v> of the instance <alu2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 141: Output port <reset> of the instance <ctl2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <tob1> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <tob2> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <lane3p1> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <lane1p2> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <lane2p2> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <lane3p2> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <p2num> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 191: Output port <lanereg> of the instance <L_reg> is unconnected or connected to loadless signal.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 289
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 289
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 289
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 289
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 289
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 289
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 51: Output port <z> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 51: Output port <n> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 51: Output port <v> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <z> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <n> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <v> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 156: Output port <reset> of the instance <ctl2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 206: Output port <tob1> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 206: Output port <tob2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 206: Output port <lanereg> of the instance <L_reg> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 360
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 360
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 360
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 360
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 360
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 360
     Summary:
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
@@ -189,34 +179,34 @@ Synthesizing Unit <alu_1>.
 	inferred   6 Multiplexer(s).
 Unit <alu_1> synthesized.
 
-Synthesizing Unit <adder_16bit_17>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_17.v".
+Synthesizing Unit <adder_16bit_26>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_26.v".
     Summary:
 	no macro.
-Unit <adder_16bit_17> synthesized.
+Unit <adder_16bit_26> synthesized.
 
-Synthesizing Unit <adder_16bit_1_33>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_33.v".
+Synthesizing Unit <adder_16bit_1_46>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_1_46.v".
     Found 16-bit subtractor for signal <a[15]_b[15]_sub_5_OUT> created at line 22.
     Found 16-bit adder for signal <a[15]_b[15]_add_1_OUT> created at line 19.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 Multiplexer(s).
-Unit <adder_16bit_1_33> synthesized.
+Unit <adder_16bit_1_46> synthesized.
 
-Synthesizing Unit <adder_16bit_2_34>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_34.v".
+Synthesizing Unit <adder_16bit_2_47>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/adder_16bit_2_47.v".
     Summary:
-Unit <adder_16bit_2_34> synthesized.
+Unit <adder_16bit_2_47> synthesized.
 
-Synthesizing Unit <boolean_16bit_18>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_18.v".
+Synthesizing Unit <boolean_16bit_27>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/boolean_16bit_27.v".
     Summary:
 	inferred  13 Multiplexer(s).
-Unit <boolean_16bit_18> synthesized.
+Unit <boolean_16bit_27> synthesized.
 
-Synthesizing Unit <shifter_16bit_19>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_19.v".
+Synthesizing Unit <shifter_16bit_28>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/shifter_16bit_28.v".
     Found 16-bit shifter arithmetic right for signal <a[15]_b[3]_shift_right_1_OUT> created at line 19
     Found 16-bit shifter logical right for signal <a[15]_b[3]_shift_right_4_OUT> created at line 22
     Found 16-bit shifter logical left for signal <a[15]_b[3]_shift_left_7_OUT> created at line 25
@@ -224,23 +214,23 @@ Synthesizing Unit <shifter_16bit_19>.
     Summary:
 	inferred   1 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
-Unit <shifter_16bit_19> synthesized.
+Unit <shifter_16bit_28> synthesized.
 
-Synthesizing Unit <compare16bit_20>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_20.v".
+Synthesizing Unit <compare16bit_29>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/compare16bit_29.v".
 WARNING:Xst:647 - Input <alufn<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <alufn<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit 4-to-1 multiplexer for signal <s<0>> created at line 12.
     Summary:
 	inferred   2 Multiplexer(s).
-Unit <compare16bit_20> synthesized.
+Unit <compare16bit_29> synthesized.
 
-Synthesizing Unit <multiply_16bit_21>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_21.v".
+Synthesizing Unit <multiply_16bit_30>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/multiply_16bit_30.v".
     Found 16x16-bit multiplier for signal <n0003> created at line 16.
     Summary:
 	inferred   1 Multiplier(s).
-Unit <multiply_16bit_21> synthesized.
+Unit <multiply_16bit_30> synthesized.
 
 Synthesizing Unit <dual_seven_seg_3>.
     Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/dual_seven_seg_2_3.v".
@@ -248,8 +238,8 @@ Synthesizing Unit <dual_seven_seg_3>.
 	inferred  22 Multiplexer(s).
 Unit <dual_seven_seg_3> synthesized.
 
-Synthesizing Unit <statemachine_5>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_5.v".
+Synthesizing Unit <statemachine_6>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/fsm_6.v".
     Found 4-bit register for signal <M_state_q>.
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
@@ -268,18 +258,18 @@ Synthesizing Unit <statemachine_5>.
     Summary:
 	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
-Unit <statemachine_5> synthesized.
+Unit <statemachine_6> synthesized.
 
-Synthesizing Unit <random_problem_27>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/random_problem_27.v".
+Synthesizing Unit <random_problem_36>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/random_problem_36.v".
     Found 32-bit comparator greater for signal <GND_13_o_M_rng_num[31]_LessThan_1_o> created at line 34
     Summary:
 	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
-Unit <random_problem_27> synthesized.
+Unit <random_problem_36> synthesized.
 
-Synthesizing Unit <pn_gen_37>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pn_gen_37.v".
+Synthesizing Unit <pn_gen_50>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pn_gen_50.v".
     Found 32-bit register for signal <M_y_q>.
     Found 32-bit register for signal <M_z_q>.
     Found 32-bit register for signal <M_w_q>.
@@ -287,10 +277,10 @@ Synthesizing Unit <pn_gen_37>.
     Summary:
 	inferred 128 D-type flip-flop(s).
 	inferred   4 Multiplexer(s).
-Unit <pn_gen_37> synthesized.
+Unit <pn_gen_50> synthesized.
 
-Synthesizing Unit <regfiles_7>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_7.v".
+Synthesizing Unit <regfiles_8>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/regfiles_8.v".
     Found 16-bit register for signal <M_r2_q>.
     Found 16-bit register for signal <M_r3_q>.
     Found 16-bit register for signal <M_r4_q>.
@@ -311,37 +301,37 @@ Synthesizing Unit <regfiles_7>.
     Summary:
 	inferred 193 D-type flip-flop(s).
 	inferred  20 Multiplexer(s).
-Unit <regfiles_7> synthesized.
+Unit <regfiles_8> synthesized.
 
-Synthesizing Unit <reset_conditioner_8>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_8.v".
+Synthesizing Unit <reset_conditioner_9>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/reset_conditioner_9.v".
     Found 4-bit register for signal <M_stage_q>.
     Summary:
 	inferred   4 D-type flip-flop(s).
-Unit <reset_conditioner_8> synthesized.
+Unit <reset_conditioner_9> synthesized.
 
-Synthesizing Unit <edge_detector_9>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_9.v".
+Synthesizing Unit <edge_detector_10>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/edge_detector_10.v".
     Found 1-bit register for signal <M_last_q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
-Unit <edge_detector_9> synthesized.
+Unit <edge_detector_10> synthesized.
 
-Synthesizing Unit <button_conditioner_10>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_10.v".
+Synthesizing Unit <button_conditioner_11>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/button_conditioner_11.v".
     Found 20-bit register for signal <M_ctr_q>.
     Found 20-bit adder for signal <M_ctr_q[19]_GND_18_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
-Unit <button_conditioner_10> synthesized.
+Unit <button_conditioner_11> synthesized.
 
-Synthesizing Unit <pipeline_29>.
-    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_29.v".
+Synthesizing Unit <pipeline_38>.
+    Related source file is "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/pipeline_38.v".
     Found 2-bit register for signal <M_pipe_q>.
     Summary:
 	inferred   2 D-type flip-flop(s).
-Unit <pipeline_29> synthesized.
+Unit <pipeline_38> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -349,19 +339,19 @@ HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 2
  16x16-bit multiplier                                  : 2
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 10
  16-bit addsub                                         : 2
- 20-bit adder                                          : 4
-# Registers                                            : 34
- 1-bit register                                        : 5
+ 20-bit adder                                          : 8
+# Registers                                            : 46
+ 1-bit register                                        : 9
  16-bit register                                       : 12
- 2-bit register                                        : 4
- 20-bit register                                       : 4
+ 2-bit register                                        : 8
+ 20-bit register                                       : 8
  32-bit register                                       : 8
  4-bit register                                        : 1
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 128
+# Multiplexers                                         : 150
  1-bit 2-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 2
  16-bit 2-to-1 multiplexer                             : 58
@@ -369,7 +359,7 @@ Macro Statistics
  16-bit 7-to-1 multiplexer                             : 2
  16-bit 8-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 8
- 7-bit 2-to-1 multiplexer                              : 44
+ 7-bit 2-to-1 multiplexer                              : 66
 # Logic shifters                                       : 6
  16-bit shifter arithmetic right                       : 2
  16-bit shifter logical left                           : 2
@@ -391,9 +381,9 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 =========================================================================
 
 
-Synthesizing (advanced) Unit <button_conditioner_10>.
+Synthesizing (advanced) Unit <button_conditioner_11>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
-Unit <button_conditioner_10> synthesized (advanced).
+Unit <button_conditioner_11> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -403,13 +393,13 @@ Macro Statistics
  16x16-bit multiplier                                  : 2
 # Adders/Subtractors                                   : 2
  16-bit addsub                                         : 2
-# Counters                                             : 4
- 20-bit up counter                                     : 4
-# Registers                                            : 465
- Flip-Flops                                            : 465
+# Counters                                             : 8
+ 20-bit up counter                                     : 8
+# Registers                                            : 477
+ Flip-Flops                                            : 477
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 186
+# Multiplexers                                         : 208
  1-bit 2-to-1 multiplexer                              : 6
  1-bit 4-to-1 multiplexer                              : 2
  1-bit 7-to-1 multiplexer                              : 32
@@ -417,7 +407,7 @@ Macro Statistics
  16-bit 2-to-1 multiplexer                             : 58
  16-bit 4-to-1 multiplexer                             : 4
  32-bit 2-to-1 multiplexer                             : 8
- 7-bit 2-to-1 multiplexer                              : 44
+ 7-bit 2-to-1 multiplexer                              : 66
 # Logic shifters                                       : 6
  16-bit shifter arithmetic right                       : 2
  16-bit shifter logical left                           : 2
@@ -453,15 +443,15 @@ Optimizing FSM <FSM_0> on signal <M_state_q[1:15]> with one-hot encoding.
  1010  | 000010000000000
  1011  | 000100000000000
  1100  | 001000000000000
- 1110  | 010000000000000
- 1101  | 100000000000000
+ 1101  | 010000000000000
+ 1110  | 100000000000000
 --------------------------
 
 Optimizing unit <mojo_top_0> ...
 
-Optimizing unit <pn_gen_37> ...
+Optimizing unit <pn_gen_50> ...
 
-Optimizing unit <regfiles_7> ...
+Optimizing unit <regfiles_8> ...
 
 Optimizing unit <alu_1> ...
 
@@ -478,19 +468,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r3_q_7> has
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 25.
-FlipFlop ctl1/M_state_q_FSM_FFd1 has been replicated 4 time(s)
-FlipFlop ctl1/M_state_q_FSM_FFd11 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 28.
+FlipFlop ctl1/M_state_q_FSM_FFd2 has been replicated 4 time(s)
 FlipFlop ctl1/M_state_q_FSM_FFd3 has been replicated 3 time(s)
 FlipFlop ctl1/M_state_q_FSM_FFd4 has been replicated 2 time(s)
-FlipFlop ctl1/M_state_q_FSM_FFd5 has been replicated 1 time(s)
 FlipFlop ctl1/M_state_q_FSM_FFd8 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd1 has been replicated 3 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd10 has been replicated 1 time(s)
 FlipFlop ctl2/M_state_q_FSM_FFd11 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd2 has been replicated 4 time(s)
 FlipFlop ctl2/M_state_q_FSM_FFd3 has been replicated 3 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd4 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd5 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd8 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd4 has been replicated 2 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd8 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -499,6 +487,10 @@ Processing Unit <mojo_top_0> :
 	Found 2-bit shift register for signal <condSub1/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <condMul1/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <condClr1/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <condAdd2/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <condSub2/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <condMul2/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <condClr2/sync/M_pipe_q_1>.
 INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 Unit <mojo_top_0> processed.
 
@@ -506,10 +498,10 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 581
- Flip-Flops                                            : 581
-# Shift Registers                                      : 4
- 2-bit shift register                                  : 4
+# Registers                                            : 664
+ Flip-Flops                                            : 664
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
 
 =========================================================================
 
@@ -532,32 +524,32 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1488
-#      GND                         : 16
-#      INV                         : 10
-#      LUT1                        : 76
-#      LUT2                        : 233
-#      LUT3                        : 62
-#      LUT4                        : 131
-#      LUT5                        : 147
-#      LUT6                        : 561
-#      MUXCY                       : 118
-#      MUXF7                       : 9
-#      VCC                         : 13
-#      XORCY                       : 112
-# FlipFlops/Latches                : 585
-#      FD                          : 9
-#      FDE                         : 260
-#      FDR                         : 47
-#      FDRE                        : 263
+# BELS                             : 1829
+#      GND                         : 24
+#      INV                         : 18
+#      LUT1                        : 152
+#      LUT2                        : 245
+#      LUT3                        : 58
+#      LUT4                        : 139
+#      LUT5                        : 145
+#      LUT6                        : 623
+#      MUXCY                       : 194
+#      MUXF7                       : 16
+#      VCC                         : 23
+#      XORCY                       : 192
+# FlipFlops/Latches                : 672
+#      FD                          : 13
+#      FDE                         : 264
+#      FDR                         : 46
+#      FDRE                        : 343
 #      FDS                         : 6
-# Shift Registers                  : 4
-#      SRLC16E                     : 4
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 57
+# IO Buffers                       : 96
 #      IBUF                        : 10
-#      OBUF                        : 41
+#      OBUF                        : 80
 #      OBUFT                       : 6
 # DSPs                             : 2
 #      DSP48A1                     : 2
@@ -569,22 +561,22 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             585  out of  11440     5%  
- Number of Slice LUTs:                 1224  out of   5720    21%  
-    Number used as Logic:              1220  out of   5720    21%  
-    Number used as Memory:                4  out of   1440     0%  
-       Number used as SRL:                4
+ Number of Slice Registers:             672  out of  11440     5%  
+ Number of Slice LUTs:                 1388  out of   5720    24%  
+    Number used as Logic:              1380  out of   5720    24%  
+    Number used as Memory:                8  out of   1440     0%  
+       Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1345
-   Number with an unused Flip Flop:     760  out of   1345    56%  
-   Number with an unused LUT:           121  out of   1345     8%  
-   Number of fully used LUT-FF pairs:   464  out of   1345    34%  
-   Number of unique control sets:        40
+ Number of LUT Flip Flop pairs used:   1508
+   Number with an unused Flip Flop:     836  out of   1508    55%  
+   Number with an unused LUT:           120  out of   1508     7%  
+   Number of fully used LUT-FF pairs:   552  out of   1508    36%  
+   Number of unique control sets:        49
 
 IO Utilization: 
- Number of IOs:                          64
- Number of bonded IOBs:                  58  out of    102    56%  
+ Number of IOs:                         103
+ Number of bonded IOBs:                  97  out of    102    95%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -611,7 +603,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 589   |
+clk                                | BUFGP                  | 680   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -622,8 +614,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.687ns (Maximum Frequency: 93.572MHz)
-   Minimum input arrival time before clock: 4.064ns
+   Minimum period: 10.780ns (Maximum Frequency: 92.764MHz)
+   Minimum input arrival time before clock: 3.526ns
    Maximum output required time after clock: 10.432ns
    Maximum combinational path delay: No path found
 
@@ -633,63 +625,62 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 10.687ns (frequency: 93.572MHz)
-  Total number of paths / destination ports: 247025 / 1415
+  Clock period: 10.780ns (frequency: 92.764MHz)
+  Total number of paths / destination ports: 247877 / 1661
 -------------------------------------------------------------------------
-Delay:               10.687ns (Levels of Logic = 9)
-  Source:            ctl1/M_state_q_FSM_FFd1_3 (FF)
+Delay:               10.780ns (Levels of Logic = 9)
+  Source:            ctl1/M_state_q_FSM_FFd5 (FF)
   Destination:       L_reg/M_r10_q_15 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: ctl1/M_state_q_FSM_FFd1_3 to L_reg/M_r10_q_15
+  Data Path: ctl1/M_state_q_FSM_FFd5 to L_reg/M_r10_q_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              11   0.525   1.147  M_state_q_FSM_FFd1_3 (M_state_q_FSM_FFd1_2)
-     LUT2:I0->O           18   0.250   1.235  M_state_q__n0083<15>1 (asel<2>)
-     end scope: 'ctl1:asel<2>'
-     begin scope: 'L_reg:asel1<2>'
-     LUT6:I5->O           14   0.254   1.126  mux6114 (a1<15>)
+     FD:C->Q              19   0.525   1.261  M_state_q_FSM_FFd5 (M_state_q_FSM_FFd5)
+     end scope: 'ctl1:M_state_q_FSM_FFd5'
+     LUT3:I2->O           16   0.254   1.182  M_ctl1_asel<1>1_1 (M_ctl1_asel<1>1)
+     begin scope: 'L_reg:M_ctl1_asel<1>1'
+     LUT6:I5->O           15   0.254   1.154  mux6114 (a1<15>)
      end scope: 'L_reg:a1<15>'
      begin scope: 'alu1:a<15>'
      begin scope: 'alu1/mul:a<15>'
      DSP48A1:B15->M15      4   3.894   0.804  Mmult_n0003 (s<15>)
      end scope: 'alu1/mul:s<15>'
-     LUT6:I5->O            3   0.254   0.874  Mmux_s85 (s<15>)
+     LUT5:I4->O            3   0.254   0.874  Mmux_s86 (s<15>)
      end scope: 'alu1:s<15>'
      begin scope: 'L_reg:alu1<15>'
      LUT6:I4->O            1   0.250   0.000  Mmux_M_r10_d71 (M_r10_d<15>)
      FDRE:D                    0.074          M_r10_q_15
     ----------------------------------------
-    Total                     10.687ns (5.501ns logic, 5.186ns route)
-                                       (51.5% logic, 48.5% route)
+    Total                     10.780ns (5.505ns logic, 5.275ns route)
+                                       (51.1% logic, 48.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 31 / 22
+  Total number of paths / destination ports: 18 / 18
 -------------------------------------------------------------------------
-Offset:              4.064ns (Levels of Logic = 4)
-  Source:            sub2 (PAD)
-  Destination:       ctl2/M_state_q_FSM_FFd13 (FF)
+Offset:              3.526ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       reset_cond/M_stage_q_3 (FF)
   Destination Clock: clk rising
 
-  Data Path: sub2 to ctl2/M_state_q_FSM_FFd13
+  Data Path: rst_n to reset_cond/M_stage_q_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.328   1.042  sub2_IBUF (sub2_IBUF)
-     begin scope: 'ctl2:subbt'
-     LUT6:I2->O            1   0.254   1.112  M_state_q_FSM_FFd13-In_SW0 (N8)
-     LUT6:I1->O            1   0.254   0.000  M_state_q_FSM_FFd13-In (M_state_q_FSM_FFd13-In)
-     FDR:D                     0.074          M_state_q_FSM_FFd13
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O              4   0.255   0.803  M_reset_cond_in1_INV_0 (M_reset_cond_in)
+     begin scope: 'reset_cond:in'
+     FDS:S                     0.459          M_stage_q_0
     ----------------------------------------
-    Total                      4.064ns (1.910ns logic, 2.154ns route)
-                                       (47.0% logic, 53.0% route)
+    Total                      3.526ns (2.042ns logic, 1.484ns route)
+                                       (57.9% logic, 42.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1694 / 38
+  Total number of paths / destination ports: 2619 / 72
 -------------------------------------------------------------------------
 Offset:              10.432ns (Levels of Logic = 8)
   Source:            L_reg/M_r1_q_1 (FF)
@@ -703,7 +694,7 @@ Offset:              10.432ns (Levels of Logic = 8)
      FDRE:C->Q            19   0.525   1.369  M_r1_q_1 (M_r1_q_1)
      end scope: 'L_reg:p1num<1>'
      begin scope: 'seven_seg11:char<1>'
-     LUT2:I0->O            1   0.250   0.682  _n0108<6>_SW0 (N40)
+     LUT2:I0->O            1   0.250   0.682  _n0108<6>_SW0 (N62)
      LUT6:I5->O            7   0.254   1.340  _n0108<6> (_n0108)
      LUT5:I0->O            3   0.254   0.994  _n06521 (_n0652_mmx_out)
      LUT6:I3->O            1   0.235   0.682  Mmux_segs141 (Mmux_segs14)
@@ -724,20 +715,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.687|         |         |         |
+clk            |   10.780|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.08 secs
+Total CPU time to Xst completion: 13.47 secs
  
 --> 
 
-Total memory usage is 4517476 kilobytes
+Total memory usage is 4517092 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   32 (   0 filtered)
-Number of infos    :   17 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
 

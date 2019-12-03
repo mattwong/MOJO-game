@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module multiply_16bit_21 (
+module multiply_16bit_30 (
     input [15:0] a,
     input [15:0] b,
     output reg [15:0] s

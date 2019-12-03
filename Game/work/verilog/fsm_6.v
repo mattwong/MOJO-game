@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module statemachine_5 (
+module statemachine_6 (
     input clk,
     input rst,
     input addbt,
@@ -47,7 +47,7 @@ module statemachine_5 (
   reg [1-1:0] M_rng_clk;
   reg [1-1:0] M_rng_rst;
   reg [1-1:0] M_rng_next;
-  random_problem_27 rng (
+  random_problem_36 rng (
     .clk(M_rng_clk),
     .rst(M_rng_rst),
     .next(M_rng_next),
@@ -100,7 +100,7 @@ module statemachine_5 (
       ADD_state: begin
         alufn = 6'h00;
         asel = 3'h0;
-        bsel = 3'h1;
+        bsel = 3'h2;
         we = 1'h1;
         wa = 1'h0;
         M_state_d = CMP_state;
@@ -165,7 +165,7 @@ module statemachine_5 (
         asel = 3'h2;
         ra = 3'h2;
         if (fromreg == 4'h8) begin
-          M_state_d = END_state;
+          M_state_d = CHGLN_state;
         end else begin
           M_state_d = SELPROB_state;
         end

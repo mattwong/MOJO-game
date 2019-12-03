@@ -4,11 +4,10 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module compare16bit_20 (
-    input [5:0] alufn,
-    input z,
-    input v,
-    input n,
+module adder_16bit_1_46 (
+    input [15:0] a,
+    input [15:0] b,
+    input [0:0] alufn,
     output reg [15:0] s
   );
   
@@ -16,14 +15,11 @@ module compare16bit_20 (
   
   always @* begin
     s[0+15-:16] = 1'h0;
-    if (alufn[1+1-:2] == 2'h2) begin
-      s[0+0-:1] = n ^ v;
+    if (alufn[0+0-:1] == 1'h0) begin
+      s[0+15-:16] = a[0+15-:16] + b[0+15-:16];
     end
-    if (alufn[1+1-:2] == 2'h1) begin
-      s[0+0-:1] = z;
-    end
-    if (alufn[1+1-:2] == 2'h3) begin
-      s[0+0-:1] = (n ^ v) | z;
+    if (alufn[0+0-:1] == 1'h1) begin
+      s[0+15-:16] = a[0+15-:16] - b[0+15-:16];
     end
   end
 endmodule

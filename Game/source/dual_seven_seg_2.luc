@@ -1,7 +1,7 @@
 module dual_seven_seg (
     input char[16],
-    output segs1[7],
-    output segs2[7]
+    output segs1[7],  //ones
+    output segs2[7]   //tens
   ) {
 
   always {

@@ -66,7 +66,7 @@ module statemachine (
       state.ADD:
         alufn = b000000;
         asel = b000;
-        bsel = b001;  
+        bsel = b010;  
         we = 1;
         wa = 000;
         state.d = state.CMP;    

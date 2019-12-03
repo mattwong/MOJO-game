@@ -4,22 +4,21 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module adder_16bit_1_33 (
-    input [15:0] a,
-    input [15:0] b,
+module adder_16bit_2_47 (
+    input a,
+    input b,
     input [0:0] alufn,
-    output reg [15:0] s
+    input [15:0] s,
+    output reg z,
+    output reg v,
+    output reg n
   );
   
   
   
   always @* begin
-    s[0+15-:16] = 1'h0;
-    if (alufn[0+0-:1] == 1'h0) begin
-      s[0+15-:16] = a[0+15-:16] + b[0+15-:16];
-    end
-    if (alufn[0+0-:1] == 1'h1) begin
-      s[0+15-:16] = a[0+15-:16] - b[0+15-:16];
-    end
+    v = (a & (b ^ alufn[0+0-:1]) & ~(s[15+0-:1])) | (~(a) & ~(b ^ alufn[0+0-:1]) & s[15+0-:1]);
+    n = s[15+0-:1];
+    z = (~|s[0+15-:16]);
   end
 endmodule
