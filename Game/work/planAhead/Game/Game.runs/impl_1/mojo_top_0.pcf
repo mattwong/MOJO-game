@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Dec 04 05:08:42 2019
+// Written by: Map P.20131013 on Wed Dec 04 12:42:54 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -93,85 +93,8 @@ COMP "p2display[8]" LOCATE = SITE "P17" LEVEL 1;
 COMP "p2display[9]" LOCATE = SITE "P21" LEVEL 1;
 COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
 COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
-TIMEGRP clk = BEL "ctl2/M_state_q_FSM_FFd14" BEL "ctl2/M_state_q_FSM_FFd15"
-        BEL "ctl2/M_state_q_FSM_FFd13" BEL "ctl2/M_state_q_FSM_FFd12" BEL
-        "ctl2/M_state_q_FSM_FFd11" BEL "ctl2/M_state_q_FSM_FFd10" BEL
-        "ctl2/M_state_q_FSM_FFd8" BEL "ctl2/M_state_q_FSM_FFd6" BEL
-        "ctl2/M_state_q_FSM_FFd4" BEL "ctl2/M_state_q_FSM_FFd3" BEL
-        "ctl2/M_state_q_FSM_FFd2" BEL "ctl2/M_state_q_FSM_FFd1" BEL
-        "ctl2/M_state_q_FSM_FFd7" BEL "ctl2/M_state_q_FSM_FFd2_1" BEL
-        "ctl2/M_state_q_FSM_FFd4_1" BEL "ctl2/M_state_q_FSM_FFd3_1" BEL
-        "ctl2/M_state_q_FSM_FFd3_2" BEL "ctl2/M_state_q_FSM_FFd2_2" BEL
-        "ctl2/M_state_q_FSM_FFd2_3" BEL "ctl2/M_state_q_FSM_FFd8_1" BEL
-        "ctl2/M_state_q_FSM_FFd4_2" BEL "ctl2/M_state_q_FSM_FFd11_1" BEL
-        "ctl2/M_state_q_FSM_FFd10_1" BEL "ctl2/M_state_q_FSM_FFd3_3" BEL
-        "ctl2/M_state_q_FSM_FFd2_4" BEL "ctl2/M_state_q_FSM_FFd9" BEL
-        "ctl2/M_state_q_FSM_FFd5" BEL "ctl2/rng/rng/M_y_q_31" BEL
-        "ctl2/rng/rng/M_y_q_30" BEL "ctl2/rng/rng/M_y_q_29" BEL
-        "ctl2/rng/rng/M_y_q_28" BEL "ctl2/rng/rng/M_y_q_27" BEL
-        "ctl2/rng/rng/M_y_q_26" BEL "ctl2/rng/rng/M_y_q_25" BEL
-        "ctl2/rng/rng/M_y_q_24" BEL "ctl2/rng/rng/M_y_q_23" BEL
-        "ctl2/rng/rng/M_y_q_22" BEL "ctl2/rng/rng/M_y_q_21" BEL
-        "ctl2/rng/rng/M_y_q_20" BEL "ctl2/rng/rng/M_y_q_19" BEL
-        "ctl2/rng/rng/M_y_q_18" BEL "ctl2/rng/rng/M_y_q_17" BEL
-        "ctl2/rng/rng/M_y_q_16" BEL "ctl2/rng/rng/M_y_q_15" BEL
-        "ctl2/rng/rng/M_y_q_14" BEL "ctl2/rng/rng/M_y_q_13" BEL
-        "ctl2/rng/rng/M_y_q_12" BEL "ctl2/rng/rng/M_y_q_11" BEL
-        "ctl2/rng/rng/M_y_q_10" BEL "ctl2/rng/rng/M_y_q_9" BEL
-        "ctl2/rng/rng/M_y_q_8" BEL "ctl2/rng/rng/M_y_q_7" BEL
-        "ctl2/rng/rng/M_y_q_6" BEL "ctl2/rng/rng/M_y_q_5" BEL
-        "ctl2/rng/rng/M_y_q_4" BEL "ctl2/rng/rng/M_y_q_3" BEL
-        "ctl2/rng/rng/M_y_q_2" BEL "ctl2/rng/rng/M_y_q_1" BEL
-        "ctl2/rng/rng/M_y_q_0" BEL "ctl2/rng/rng/M_z_q_31" BEL
-        "ctl2/rng/rng/M_z_q_30" BEL "ctl2/rng/rng/M_z_q_29" BEL
-        "ctl2/rng/rng/M_z_q_28" BEL "ctl2/rng/rng/M_z_q_27" BEL
-        "ctl2/rng/rng/M_z_q_26" BEL "ctl2/rng/rng/M_z_q_25" BEL
-        "ctl2/rng/rng/M_z_q_24" BEL "ctl2/rng/rng/M_z_q_23" BEL
-        "ctl2/rng/rng/M_z_q_22" BEL "ctl2/rng/rng/M_z_q_21" BEL
-        "ctl2/rng/rng/M_z_q_20" BEL "ctl2/rng/rng/M_z_q_19" BEL
-        "ctl2/rng/rng/M_z_q_18" BEL "ctl2/rng/rng/M_z_q_17" BEL
-        "ctl2/rng/rng/M_z_q_16" BEL "ctl2/rng/rng/M_z_q_15" BEL
-        "ctl2/rng/rng/M_z_q_14" BEL "ctl2/rng/rng/M_z_q_13" BEL
-        "ctl2/rng/rng/M_z_q_12" BEL "ctl2/rng/rng/M_z_q_11" BEL
-        "ctl2/rng/rng/M_z_q_10" BEL "ctl2/rng/rng/M_z_q_9" BEL
-        "ctl2/rng/rng/M_z_q_8" BEL "ctl2/rng/rng/M_z_q_7" BEL
-        "ctl2/rng/rng/M_z_q_6" BEL "ctl2/rng/rng/M_z_q_5" BEL
-        "ctl2/rng/rng/M_z_q_4" BEL "ctl2/rng/rng/M_z_q_3" BEL
-        "ctl2/rng/rng/M_z_q_2" BEL "ctl2/rng/rng/M_z_q_1" BEL
-        "ctl2/rng/rng/M_z_q_0" BEL "ctl2/rng/rng/M_w_q_31" BEL
-        "ctl2/rng/rng/M_w_q_30" BEL "ctl2/rng/rng/M_w_q_29" BEL
-        "ctl2/rng/rng/M_w_q_28" BEL "ctl2/rng/rng/M_w_q_27" BEL
-        "ctl2/rng/rng/M_w_q_26" BEL "ctl2/rng/rng/M_w_q_25" BEL
-        "ctl2/rng/rng/M_w_q_24" BEL "ctl2/rng/rng/M_w_q_23" BEL
-        "ctl2/rng/rng/M_w_q_22" BEL "ctl2/rng/rng/M_w_q_21" BEL
-        "ctl2/rng/rng/M_w_q_20" BEL "ctl2/rng/rng/M_w_q_19" BEL
-        "ctl2/rng/rng/M_w_q_18" BEL "ctl2/rng/rng/M_w_q_17" BEL
-        "ctl2/rng/rng/M_w_q_16" BEL "ctl2/rng/rng/M_w_q_15" BEL
-        "ctl2/rng/rng/M_w_q_14" BEL "ctl2/rng/rng/M_w_q_13" BEL
-        "ctl2/rng/rng/M_w_q_12" BEL "ctl2/rng/rng/M_w_q_11" BEL
-        "ctl2/rng/rng/M_w_q_10" BEL "ctl2/rng/rng/M_w_q_9" BEL
-        "ctl2/rng/rng/M_w_q_8" BEL "ctl2/rng/rng/M_w_q_7" BEL
-        "ctl2/rng/rng/M_w_q_6" BEL "ctl2/rng/rng/M_w_q_5" BEL
-        "ctl2/rng/rng/M_w_q_4" BEL "ctl2/rng/rng/M_w_q_3" BEL
-        "ctl2/rng/rng/M_w_q_2" BEL "ctl2/rng/rng/M_w_q_1" BEL
-        "ctl2/rng/rng/M_w_q_0" BEL "ctl2/rng/rng/M_x_q_31" BEL
-        "ctl2/rng/rng/M_x_q_30" BEL "ctl2/rng/rng/M_x_q_29" BEL
-        "ctl2/rng/rng/M_x_q_28" BEL "ctl2/rng/rng/M_x_q_27" BEL
-        "ctl2/rng/rng/M_x_q_26" BEL "ctl2/rng/rng/M_x_q_25" BEL
-        "ctl2/rng/rng/M_x_q_24" BEL "ctl2/rng/rng/M_x_q_23" BEL
-        "ctl2/rng/rng/M_x_q_22" BEL "ctl2/rng/rng/M_x_q_21" BEL
-        "ctl2/rng/rng/M_x_q_20" BEL "ctl2/rng/rng/M_x_q_19" BEL
-        "ctl2/rng/rng/M_x_q_18" BEL "ctl2/rng/rng/M_x_q_17" BEL
-        "ctl2/rng/rng/M_x_q_16" BEL "ctl2/rng/rng/M_x_q_15" BEL
-        "ctl2/rng/rng/M_x_q_14" BEL "ctl2/rng/rng/M_x_q_13" BEL
-        "ctl2/rng/rng/M_x_q_12" BEL "ctl2/rng/rng/M_x_q_11" BEL
-        "ctl2/rng/rng/M_x_q_10" BEL "ctl2/rng/rng/M_x_q_9" BEL
-        "ctl2/rng/rng/M_x_q_8" BEL "ctl2/rng/rng/M_x_q_7" BEL
-        "ctl2/rng/rng/M_x_q_6" BEL "ctl2/rng/rng/M_x_q_5" BEL
-        "ctl2/rng/rng/M_x_q_4" BEL "ctl2/rng/rng/M_x_q_3" BEL
-        "ctl2/rng/rng/M_x_q_2" BEL "ctl2/rng/rng/M_x_q_1" BEL
-        "ctl2/rng/rng/M_x_q_0" BEL "clk_BUFGP/BUFG" BEL "edgeMul1/M_last_q"
-        BEL "edgeMul2/M_last_q" BEL "reset_cond/M_stage_q_3" BEL
+TIMEGRP clk = BEL "clk_BUFGP/BUFG" BEL "edgeMul1/M_last_q" BEL
+        "edgeMul2/M_last_q" BEL "reset_cond/M_stage_q_3" BEL
         "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
         "reset_cond/M_stage_q_0" BEL "L_reg/M_r6_q_10" BEL "L_reg/M_r6_q_11"
         BEL "L_reg/M_r6_q_12" BEL "L_reg/M_r6_q_13" BEL "L_reg/M_r6_q_14" BEL
@@ -234,7 +157,34 @@ TIMEGRP clk = BEL "ctl2/M_state_q_FSM_FFd14" BEL "ctl2/M_state_q_FSM_FFd15"
         "L_reg/M_r5_q_1" BEL "L_reg/M_r5_q_14" BEL "L_reg/M_r5_q_2" BEL
         "L_reg/M_r5_q_15" BEL "L_reg/M_r5_q_3" BEL "L_reg/M_r5_q_4" BEL
         "L_reg/M_r5_q_5" BEL "L_reg/M_r5_q_6" BEL "L_reg/M_r5_q_7" BEL
-        "L_reg/M_r5_q_8" BEL "L_reg/M_r5_q_9" BEL "edgeClr1/M_last_q" BEL
+        "L_reg/M_r5_q_8" BEL "L_reg/M_r5_q_9" BEL "ctl1/M_state_q_FSM_FFd14"
+        BEL "ctl1/M_state_q_FSM_FFd15" BEL "ctl1/M_state_q_FSM_FFd13" BEL
+        "ctl1/M_state_q_FSM_FFd12" BEL "ctl1/M_state_q_FSM_FFd11" BEL
+        "ctl1/M_state_q_FSM_FFd10" BEL "ctl1/M_state_q_FSM_FFd9" BEL
+        "ctl1/M_state_q_FSM_FFd8" BEL "ctl1/M_state_q_FSM_FFd6" BEL
+        "ctl1/M_state_q_FSM_FFd5" BEL "ctl1/M_state_q_FSM_FFd4" BEL
+        "ctl1/M_state_q_FSM_FFd3" BEL "ctl1/M_state_q_FSM_FFd2" BEL
+        "ctl1/M_state_q_FSM_FFd1" BEL "ctl1/M_state_q_FSM_FFd7" BEL
+        "ctl1/M_state_q_FSM_FFd2_1" BEL "ctl1/M_state_q_FSM_FFd4_1" BEL
+        "ctl1/M_state_q_FSM_FFd3_1" BEL "ctl1/M_state_q_FSM_FFd3_2" BEL
+        "ctl1/M_state_q_FSM_FFd2_2" BEL "ctl1/M_state_q_FSM_FFd2_3" BEL
+        "ctl1/M_state_q_FSM_FFd8_1" BEL "ctl1/M_state_q_FSM_FFd4_2" BEL
+        "ctl1/M_state_q_FSM_FFd3_3" BEL "ctl1/M_state_q_FSM_FFd2_4" BEL
+        "ctl2/M_state_q_FSM_FFd15" BEL "ctl2/M_state_q_FSM_FFd14" BEL
+        "ctl2/M_state_q_FSM_FFd13" BEL "ctl2/M_state_q_FSM_FFd12" BEL
+        "ctl2/M_state_q_FSM_FFd11" BEL "ctl2/M_state_q_FSM_FFd8" BEL
+        "ctl2/M_state_q_FSM_FFd10" BEL "ctl2/M_state_q_FSM_FFd9" BEL
+        "ctl2/M_state_q_FSM_FFd6" BEL "ctl2/M_state_q_FSM_FFd5" BEL
+        "ctl2/M_state_q_FSM_FFd4" BEL "ctl2/M_state_q_FSM_FFd1" BEL
+        "ctl2/M_state_q_FSM_FFd3" BEL "ctl2/M_state_q_FSM_FFd2" BEL
+        "ctl2/M_state_q_FSM_FFd7" BEL "ctl2/M_state_q_FSM_FFd2_1" BEL
+        "ctl2/M_state_q_FSM_FFd4_1" BEL "ctl2/M_state_q_FSM_FFd3_1" BEL
+        "ctl2/M_state_q_FSM_FFd3_2" BEL "ctl2/M_state_q_FSM_FFd2_2" BEL
+        "ctl2/M_state_q_FSM_FFd2_3" BEL "ctl2/M_state_q_FSM_FFd8_1" BEL
+        "ctl2/M_state_q_FSM_FFd4_2" BEL "ctl2/M_state_q_FSM_FFd5_1" BEL
+        "ctl2/M_state_q_FSM_FFd3_3" BEL "ctl2/M_state_q_FSM_FFd11_1" BEL
+        "ctl2/M_state_q_FSM_FFd10_1" BEL "ctl2/M_state_q_FSM_FFd2_4" BEL
+        "ctl2/M_state_q_FSM_FFd4_3" BEL "edgeClr1/M_last_q" BEL
         "edgeClr2/M_last_q" BEL "edgeSub1/M_last_q" BEL "edgeSub2/M_last_q"
         BEL "edgeAdd1/M_last_q" BEL "edgeAdd2/M_last_q" BEL
         "condMul1/M_ctr_q_0" BEL "condMul1/M_ctr_q_1" BEL "condMul1/M_ctr_q_2"
@@ -257,6 +207,102 @@ TIMEGRP clk = BEL "ctl2/M_state_q_FSM_FFd14" BEL "ctl2/M_state_q_FSM_FFd15"
         "condMul2/M_ctr_q_16" BEL "condMul2/M_ctr_q_17" BEL
         "condMul2/M_ctr_q_18" BEL "condMul2/M_ctr_q_19" BEL
         "condMul2/sync/M_pipe_q_1" BEL "condMul2/sync/Mshreg_M_pipe_q_1" BEL
+        "rng1/rng/M_y_q_31" BEL "rng1/rng/M_y_q_30" BEL "rng1/rng/M_y_q_29"
+        BEL "rng1/rng/M_y_q_28" BEL "rng1/rng/M_y_q_27" BEL
+        "rng1/rng/M_y_q_26" BEL "rng1/rng/M_y_q_25" BEL "rng1/rng/M_y_q_24"
+        BEL "rng1/rng/M_y_q_23" BEL "rng1/rng/M_y_q_22" BEL
+        "rng1/rng/M_y_q_21" BEL "rng1/rng/M_y_q_20" BEL "rng1/rng/M_y_q_19"
+        BEL "rng1/rng/M_y_q_18" BEL "rng1/rng/M_y_q_17" BEL
+        "rng1/rng/M_y_q_16" BEL "rng1/rng/M_y_q_15" BEL "rng1/rng/M_y_q_14"
+        BEL "rng1/rng/M_y_q_13" BEL "rng1/rng/M_y_q_12" BEL
+        "rng1/rng/M_y_q_11" BEL "rng1/rng/M_y_q_10" BEL "rng1/rng/M_y_q_9" BEL
+        "rng1/rng/M_y_q_8" BEL "rng1/rng/M_y_q_7" BEL "rng1/rng/M_y_q_6" BEL
+        "rng1/rng/M_y_q_5" BEL "rng1/rng/M_y_q_4" BEL "rng1/rng/M_y_q_3" BEL
+        "rng1/rng/M_y_q_2" BEL "rng1/rng/M_y_q_1" BEL "rng1/rng/M_y_q_0" BEL
+        "rng1/rng/M_z_q_31" BEL "rng1/rng/M_z_q_30" BEL "rng1/rng/M_z_q_29"
+        BEL "rng1/rng/M_z_q_28" BEL "rng1/rng/M_z_q_27" BEL
+        "rng1/rng/M_z_q_26" BEL "rng1/rng/M_z_q_25" BEL "rng1/rng/M_z_q_24"
+        BEL "rng1/rng/M_z_q_23" BEL "rng1/rng/M_z_q_22" BEL
+        "rng1/rng/M_z_q_21" BEL "rng1/rng/M_z_q_20" BEL "rng1/rng/M_z_q_19"
+        BEL "rng1/rng/M_z_q_18" BEL "rng1/rng/M_z_q_17" BEL
+        "rng1/rng/M_z_q_16" BEL "rng1/rng/M_z_q_15" BEL "rng1/rng/M_z_q_14"
+        BEL "rng1/rng/M_z_q_13" BEL "rng1/rng/M_z_q_12" BEL
+        "rng1/rng/M_z_q_11" BEL "rng1/rng/M_z_q_10" BEL "rng1/rng/M_z_q_9" BEL
+        "rng1/rng/M_z_q_8" BEL "rng1/rng/M_z_q_7" BEL "rng1/rng/M_z_q_6" BEL
+        "rng1/rng/M_z_q_5" BEL "rng1/rng/M_z_q_4" BEL "rng1/rng/M_z_q_3" BEL
+        "rng1/rng/M_z_q_2" BEL "rng1/rng/M_z_q_1" BEL "rng1/rng/M_z_q_0" BEL
+        "rng1/rng/M_w_q_31" BEL "rng1/rng/M_w_q_30" BEL "rng1/rng/M_w_q_29"
+        BEL "rng1/rng/M_w_q_28" BEL "rng1/rng/M_w_q_27" BEL
+        "rng1/rng/M_w_q_26" BEL "rng1/rng/M_w_q_25" BEL "rng1/rng/M_w_q_24"
+        BEL "rng1/rng/M_w_q_23" BEL "rng1/rng/M_w_q_22" BEL
+        "rng1/rng/M_w_q_21" BEL "rng1/rng/M_w_q_20" BEL "rng1/rng/M_w_q_19"
+        BEL "rng1/rng/M_w_q_18" BEL "rng1/rng/M_w_q_17" BEL
+        "rng1/rng/M_w_q_16" BEL "rng1/rng/M_w_q_15" BEL "rng1/rng/M_w_q_14"
+        BEL "rng1/rng/M_w_q_13" BEL "rng1/rng/M_w_q_12" BEL
+        "rng1/rng/M_w_q_11" BEL "rng1/rng/M_w_q_10" BEL "rng1/rng/M_w_q_9" BEL
+        "rng1/rng/M_w_q_8" BEL "rng1/rng/M_w_q_7" BEL "rng1/rng/M_w_q_6" BEL
+        "rng1/rng/M_w_q_5" BEL "rng1/rng/M_w_q_4" BEL "rng1/rng/M_w_q_3" BEL
+        "rng1/rng/M_w_q_2" BEL "rng1/rng/M_w_q_1" BEL "rng1/rng/M_w_q_0" BEL
+        "rng1/rng/M_x_q_31" BEL "rng1/rng/M_x_q_30" BEL "rng1/rng/M_x_q_29"
+        BEL "rng1/rng/M_x_q_28" BEL "rng1/rng/M_x_q_27" BEL
+        "rng1/rng/M_x_q_26" BEL "rng1/rng/M_x_q_25" BEL "rng1/rng/M_x_q_24"
+        BEL "rng1/rng/M_x_q_23" BEL "rng1/rng/M_x_q_22" BEL
+        "rng1/rng/M_x_q_21" BEL "rng1/rng/M_x_q_20" BEL "rng1/rng/M_x_q_19"
+        BEL "rng1/rng/M_x_q_18" BEL "rng1/rng/M_x_q_17" BEL
+        "rng1/rng/M_x_q_16" BEL "rng1/rng/M_x_q_15" BEL "rng1/rng/M_x_q_14"
+        BEL "rng1/rng/M_x_q_13" BEL "rng1/rng/M_x_q_12" BEL
+        "rng1/rng/M_x_q_11" BEL "rng1/rng/M_x_q_10" BEL "rng1/rng/M_x_q_9" BEL
+        "rng1/rng/M_x_q_8" BEL "rng1/rng/M_x_q_7" BEL "rng1/rng/M_x_q_6" BEL
+        "rng1/rng/M_x_q_5" BEL "rng1/rng/M_x_q_4" BEL "rng1/rng/M_x_q_3" BEL
+        "rng1/rng/M_x_q_2" BEL "rng1/rng/M_x_q_1" BEL "rng1/rng/M_x_q_0" BEL
+        "rng2/rng/M_y_q_31" BEL "rng2/rng/M_y_q_30" BEL "rng2/rng/M_y_q_29"
+        BEL "rng2/rng/M_y_q_28" BEL "rng2/rng/M_y_q_27" BEL
+        "rng2/rng/M_y_q_26" BEL "rng2/rng/M_y_q_25" BEL "rng2/rng/M_y_q_24"
+        BEL "rng2/rng/M_y_q_23" BEL "rng2/rng/M_y_q_22" BEL
+        "rng2/rng/M_y_q_21" BEL "rng2/rng/M_y_q_20" BEL "rng2/rng/M_y_q_19"
+        BEL "rng2/rng/M_y_q_18" BEL "rng2/rng/M_y_q_17" BEL
+        "rng2/rng/M_y_q_16" BEL "rng2/rng/M_y_q_15" BEL "rng2/rng/M_y_q_14"
+        BEL "rng2/rng/M_y_q_13" BEL "rng2/rng/M_y_q_12" BEL
+        "rng2/rng/M_y_q_11" BEL "rng2/rng/M_y_q_10" BEL "rng2/rng/M_y_q_9" BEL
+        "rng2/rng/M_y_q_8" BEL "rng2/rng/M_y_q_7" BEL "rng2/rng/M_y_q_6" BEL
+        "rng2/rng/M_y_q_5" BEL "rng2/rng/M_y_q_4" BEL "rng2/rng/M_y_q_3" BEL
+        "rng2/rng/M_y_q_2" BEL "rng2/rng/M_y_q_1" BEL "rng2/rng/M_y_q_0" BEL
+        "rng2/rng/M_z_q_31" BEL "rng2/rng/M_z_q_30" BEL "rng2/rng/M_z_q_29"
+        BEL "rng2/rng/M_z_q_28" BEL "rng2/rng/M_z_q_27" BEL
+        "rng2/rng/M_z_q_26" BEL "rng2/rng/M_z_q_25" BEL "rng2/rng/M_z_q_24"
+        BEL "rng2/rng/M_z_q_23" BEL "rng2/rng/M_z_q_22" BEL
+        "rng2/rng/M_z_q_21" BEL "rng2/rng/M_z_q_20" BEL "rng2/rng/M_z_q_19"
+        BEL "rng2/rng/M_z_q_18" BEL "rng2/rng/M_z_q_17" BEL
+        "rng2/rng/M_z_q_16" BEL "rng2/rng/M_z_q_15" BEL "rng2/rng/M_z_q_14"
+        BEL "rng2/rng/M_z_q_13" BEL "rng2/rng/M_z_q_12" BEL
+        "rng2/rng/M_z_q_11" BEL "rng2/rng/M_z_q_10" BEL "rng2/rng/M_z_q_9" BEL
+        "rng2/rng/M_z_q_8" BEL "rng2/rng/M_z_q_7" BEL "rng2/rng/M_z_q_6" BEL
+        "rng2/rng/M_z_q_5" BEL "rng2/rng/M_z_q_4" BEL "rng2/rng/M_z_q_3" BEL
+        "rng2/rng/M_z_q_2" BEL "rng2/rng/M_z_q_1" BEL "rng2/rng/M_z_q_0" BEL
+        "rng2/rng/M_w_q_31" BEL "rng2/rng/M_w_q_30" BEL "rng2/rng/M_w_q_29"
+        BEL "rng2/rng/M_w_q_28" BEL "rng2/rng/M_w_q_27" BEL
+        "rng2/rng/M_w_q_26" BEL "rng2/rng/M_w_q_25" BEL "rng2/rng/M_w_q_24"
+        BEL "rng2/rng/M_w_q_23" BEL "rng2/rng/M_w_q_22" BEL
+        "rng2/rng/M_w_q_21" BEL "rng2/rng/M_w_q_20" BEL "rng2/rng/M_w_q_19"
+        BEL "rng2/rng/M_w_q_18" BEL "rng2/rng/M_w_q_17" BEL
+        "rng2/rng/M_w_q_16" BEL "rng2/rng/M_w_q_15" BEL "rng2/rng/M_w_q_14"
+        BEL "rng2/rng/M_w_q_13" BEL "rng2/rng/M_w_q_12" BEL
+        "rng2/rng/M_w_q_11" BEL "rng2/rng/M_w_q_10" BEL "rng2/rng/M_w_q_9" BEL
+        "rng2/rng/M_w_q_8" BEL "rng2/rng/M_w_q_7" BEL "rng2/rng/M_w_q_6" BEL
+        "rng2/rng/M_w_q_5" BEL "rng2/rng/M_w_q_4" BEL "rng2/rng/M_w_q_3" BEL
+        "rng2/rng/M_w_q_2" BEL "rng2/rng/M_w_q_1" BEL "rng2/rng/M_w_q_0" BEL
+        "rng2/rng/M_x_q_31" BEL "rng2/rng/M_x_q_30" BEL "rng2/rng/M_x_q_29"
+        BEL "rng2/rng/M_x_q_28" BEL "rng2/rng/M_x_q_27" BEL
+        "rng2/rng/M_x_q_26" BEL "rng2/rng/M_x_q_25" BEL "rng2/rng/M_x_q_24"
+        BEL "rng2/rng/M_x_q_23" BEL "rng2/rng/M_x_q_22" BEL
+        "rng2/rng/M_x_q_21" BEL "rng2/rng/M_x_q_20" BEL "rng2/rng/M_x_q_19"
+        BEL "rng2/rng/M_x_q_18" BEL "rng2/rng/M_x_q_17" BEL
+        "rng2/rng/M_x_q_16" BEL "rng2/rng/M_x_q_15" BEL "rng2/rng/M_x_q_14"
+        BEL "rng2/rng/M_x_q_13" BEL "rng2/rng/M_x_q_12" BEL
+        "rng2/rng/M_x_q_11" BEL "rng2/rng/M_x_q_10" BEL "rng2/rng/M_x_q_9" BEL
+        "rng2/rng/M_x_q_8" BEL "rng2/rng/M_x_q_7" BEL "rng2/rng/M_x_q_6" BEL
+        "rng2/rng/M_x_q_5" BEL "rng2/rng/M_x_q_4" BEL "rng2/rng/M_x_q_3" BEL
+        "rng2/rng/M_x_q_2" BEL "rng2/rng/M_x_q_1" BEL "rng2/rng/M_x_q_0" BEL
         "condClr1/M_ctr_q_0" BEL "condClr1/M_ctr_q_1" BEL "condClr1/M_ctr_q_2"
         BEL "condClr1/M_ctr_q_3" BEL "condClr1/M_ctr_q_4" BEL
         "condClr1/M_ctr_q_5" BEL "condClr1/M_ctr_q_6" BEL "condClr1/M_ctr_q_7"
@@ -316,84 +362,7 @@ TIMEGRP clk = BEL "ctl2/M_state_q_FSM_FFd14" BEL "ctl2/M_state_q_FSM_FFd15"
         "condAdd2/M_ctr_q_14" BEL "condAdd2/M_ctr_q_15" BEL
         "condAdd2/M_ctr_q_16" BEL "condAdd2/M_ctr_q_17" BEL
         "condAdd2/M_ctr_q_18" BEL "condAdd2/M_ctr_q_19" BEL
-        "condAdd2/sync/M_pipe_q_1" BEL "condAdd2/sync/Mshreg_M_pipe_q_1" BEL
-        "ctl1/M_state_q_FSM_FFd15" BEL "ctl1/M_state_q_FSM_FFd14" BEL
-        "ctl1/M_state_q_FSM_FFd13" BEL "ctl1/M_state_q_FSM_FFd12" BEL
-        "ctl1/M_state_q_FSM_FFd8" BEL "ctl1/M_state_q_FSM_FFd10" BEL
-        "ctl1/M_state_q_FSM_FFd6" BEL "ctl1/M_state_q_FSM_FFd4" BEL
-        "ctl1/M_state_q_FSM_FFd1" BEL "ctl1/M_state_q_FSM_FFd3" BEL
-        "ctl1/M_state_q_FSM_FFd2" BEL "ctl1/M_state_q_FSM_FFd7" BEL
-        "ctl1/M_state_q_FSM_FFd2_1" BEL "ctl1/M_state_q_FSM_FFd4_1" BEL
-        "ctl1/M_state_q_FSM_FFd8_1" BEL "ctl1/M_state_q_FSM_FFd3_1" BEL
-        "ctl1/M_state_q_FSM_FFd3_2" BEL "ctl1/M_state_q_FSM_FFd2_2" BEL
-        "ctl1/M_state_q_FSM_FFd2_3" BEL "ctl1/M_state_q_FSM_FFd4_2" BEL
-        "ctl1/M_state_q_FSM_FFd3_3" BEL "ctl1/M_state_q_FSM_FFd2_4" BEL
-        "ctl1/M_state_q_FSM_FFd11" BEL "ctl1/M_state_q_FSM_FFd9" BEL
-        "ctl1/M_state_q_FSM_FFd5" BEL "ctl1/rng/rng/M_y_q_31" BEL
-        "ctl1/rng/rng/M_y_q_30" BEL "ctl1/rng/rng/M_y_q_29" BEL
-        "ctl1/rng/rng/M_y_q_28" BEL "ctl1/rng/rng/M_y_q_27" BEL
-        "ctl1/rng/rng/M_y_q_26" BEL "ctl1/rng/rng/M_y_q_25" BEL
-        "ctl1/rng/rng/M_y_q_24" BEL "ctl1/rng/rng/M_y_q_23" BEL
-        "ctl1/rng/rng/M_y_q_22" BEL "ctl1/rng/rng/M_y_q_21" BEL
-        "ctl1/rng/rng/M_y_q_20" BEL "ctl1/rng/rng/M_y_q_19" BEL
-        "ctl1/rng/rng/M_y_q_18" BEL "ctl1/rng/rng/M_y_q_17" BEL
-        "ctl1/rng/rng/M_y_q_16" BEL "ctl1/rng/rng/M_y_q_15" BEL
-        "ctl1/rng/rng/M_y_q_14" BEL "ctl1/rng/rng/M_y_q_13" BEL
-        "ctl1/rng/rng/M_y_q_12" BEL "ctl1/rng/rng/M_y_q_11" BEL
-        "ctl1/rng/rng/M_y_q_10" BEL "ctl1/rng/rng/M_y_q_9" BEL
-        "ctl1/rng/rng/M_y_q_8" BEL "ctl1/rng/rng/M_y_q_7" BEL
-        "ctl1/rng/rng/M_y_q_6" BEL "ctl1/rng/rng/M_y_q_5" BEL
-        "ctl1/rng/rng/M_y_q_4" BEL "ctl1/rng/rng/M_y_q_3" BEL
-        "ctl1/rng/rng/M_y_q_2" BEL "ctl1/rng/rng/M_y_q_1" BEL
-        "ctl1/rng/rng/M_y_q_0" BEL "ctl1/rng/rng/M_z_q_31" BEL
-        "ctl1/rng/rng/M_z_q_30" BEL "ctl1/rng/rng/M_z_q_29" BEL
-        "ctl1/rng/rng/M_z_q_28" BEL "ctl1/rng/rng/M_z_q_27" BEL
-        "ctl1/rng/rng/M_z_q_26" BEL "ctl1/rng/rng/M_z_q_25" BEL
-        "ctl1/rng/rng/M_z_q_24" BEL "ctl1/rng/rng/M_z_q_23" BEL
-        "ctl1/rng/rng/M_z_q_22" BEL "ctl1/rng/rng/M_z_q_21" BEL
-        "ctl1/rng/rng/M_z_q_20" BEL "ctl1/rng/rng/M_z_q_19" BEL
-        "ctl1/rng/rng/M_z_q_18" BEL "ctl1/rng/rng/M_z_q_17" BEL
-        "ctl1/rng/rng/M_z_q_16" BEL "ctl1/rng/rng/M_z_q_15" BEL
-        "ctl1/rng/rng/M_z_q_14" BEL "ctl1/rng/rng/M_z_q_13" BEL
-        "ctl1/rng/rng/M_z_q_12" BEL "ctl1/rng/rng/M_z_q_11" BEL
-        "ctl1/rng/rng/M_z_q_10" BEL "ctl1/rng/rng/M_z_q_9" BEL
-        "ctl1/rng/rng/M_z_q_8" BEL "ctl1/rng/rng/M_z_q_7" BEL
-        "ctl1/rng/rng/M_z_q_6" BEL "ctl1/rng/rng/M_z_q_5" BEL
-        "ctl1/rng/rng/M_z_q_4" BEL "ctl1/rng/rng/M_z_q_3" BEL
-        "ctl1/rng/rng/M_z_q_2" BEL "ctl1/rng/rng/M_z_q_1" BEL
-        "ctl1/rng/rng/M_z_q_0" BEL "ctl1/rng/rng/M_w_q_31" BEL
-        "ctl1/rng/rng/M_w_q_30" BEL "ctl1/rng/rng/M_w_q_29" BEL
-        "ctl1/rng/rng/M_w_q_28" BEL "ctl1/rng/rng/M_w_q_27" BEL
-        "ctl1/rng/rng/M_w_q_26" BEL "ctl1/rng/rng/M_w_q_25" BEL
-        "ctl1/rng/rng/M_w_q_24" BEL "ctl1/rng/rng/M_w_q_23" BEL
-        "ctl1/rng/rng/M_w_q_22" BEL "ctl1/rng/rng/M_w_q_21" BEL
-        "ctl1/rng/rng/M_w_q_20" BEL "ctl1/rng/rng/M_w_q_19" BEL
-        "ctl1/rng/rng/M_w_q_18" BEL "ctl1/rng/rng/M_w_q_17" BEL
-        "ctl1/rng/rng/M_w_q_16" BEL "ctl1/rng/rng/M_w_q_15" BEL
-        "ctl1/rng/rng/M_w_q_14" BEL "ctl1/rng/rng/M_w_q_13" BEL
-        "ctl1/rng/rng/M_w_q_12" BEL "ctl1/rng/rng/M_w_q_11" BEL
-        "ctl1/rng/rng/M_w_q_10" BEL "ctl1/rng/rng/M_w_q_9" BEL
-        "ctl1/rng/rng/M_w_q_8" BEL "ctl1/rng/rng/M_w_q_7" BEL
-        "ctl1/rng/rng/M_w_q_6" BEL "ctl1/rng/rng/M_w_q_5" BEL
-        "ctl1/rng/rng/M_w_q_4" BEL "ctl1/rng/rng/M_w_q_3" BEL
-        "ctl1/rng/rng/M_w_q_2" BEL "ctl1/rng/rng/M_w_q_1" BEL
-        "ctl1/rng/rng/M_w_q_0" BEL "ctl1/rng/rng/M_x_q_31" BEL
-        "ctl1/rng/rng/M_x_q_30" BEL "ctl1/rng/rng/M_x_q_29" BEL
-        "ctl1/rng/rng/M_x_q_28" BEL "ctl1/rng/rng/M_x_q_27" BEL
-        "ctl1/rng/rng/M_x_q_26" BEL "ctl1/rng/rng/M_x_q_25" BEL
-        "ctl1/rng/rng/M_x_q_24" BEL "ctl1/rng/rng/M_x_q_23" BEL
-        "ctl1/rng/rng/M_x_q_22" BEL "ctl1/rng/rng/M_x_q_21" BEL
-        "ctl1/rng/rng/M_x_q_20" BEL "ctl1/rng/rng/M_x_q_19" BEL
-        "ctl1/rng/rng/M_x_q_18" BEL "ctl1/rng/rng/M_x_q_17" BEL
-        "ctl1/rng/rng/M_x_q_16" BEL "ctl1/rng/rng/M_x_q_15" BEL
-        "ctl1/rng/rng/M_x_q_14" BEL "ctl1/rng/rng/M_x_q_13" BEL
-        "ctl1/rng/rng/M_x_q_12" BEL "ctl1/rng/rng/M_x_q_11" BEL
-        "ctl1/rng/rng/M_x_q_10" BEL "ctl1/rng/rng/M_x_q_9" BEL
-        "ctl1/rng/rng/M_x_q_8" BEL "ctl1/rng/rng/M_x_q_7" BEL
-        "ctl1/rng/rng/M_x_q_6" BEL "ctl1/rng/rng/M_x_q_5" BEL
-        "ctl1/rng/rng/M_x_q_4" BEL "ctl1/rng/rng/M_x_q_3" BEL
-        "ctl1/rng/rng/M_x_q_2" BEL "ctl1/rng/rng/M_x_q_1" BEL
-        "ctl1/rng/rng/M_x_q_0";
+        "condAdd2/sync/M_pipe_q_1" BEL "condAdd2/sync/Mshreg_M_pipe_q_1";
 TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 SCHEMATIC END;
 

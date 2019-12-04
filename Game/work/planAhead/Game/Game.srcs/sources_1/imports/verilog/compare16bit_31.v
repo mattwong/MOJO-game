@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module compare16bit_29 (
+module compare16bit_31 (
     input [5:0] alufn,
     input z,
     input v,

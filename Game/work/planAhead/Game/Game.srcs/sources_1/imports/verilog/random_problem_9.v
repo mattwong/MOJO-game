@@ -4,10 +4,11 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module random_problem_36 (
+module random_problem_9 (
     input clk,
     input rst,
     input next,
+    input [31:0] seed,
     output reg [15:0] num
   );
   
@@ -18,7 +19,7 @@ module random_problem_36 (
   reg [1-1:0] M_rng_rst;
   reg [1-1:0] M_rng_next;
   reg [32-1:0] M_rng_seed;
-  pn_gen_50 rng (
+  pn_gen_38 rng (
     .clk(M_rng_clk),
     .rst(M_rng_rst),
     .next(M_rng_next),
@@ -29,7 +30,7 @@ module random_problem_36 (
   always @* begin
     M_rng_clk = clk;
     M_rng_rst = rst;
-    M_rng_seed = 16'had9c;
+    M_rng_seed = seed;
     M_rng_next = next;
     if (M_rng_num > 7'h63) begin
       num = M_rng_num[0+5-:6];

@@ -4,15 +4,22 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module multiply_16bit_30 (
+module adder_16bit_1_48 (
     input [15:0] a,
     input [15:0] b,
+    input [0:0] alufn,
     output reg [15:0] s
   );
   
   
   
   always @* begin
-    s[0+15-:16] = a[0+15-:16] * b[0+15-:16];
+    s[0+15-:16] = 1'h0;
+    if (alufn[0+0-:1] == 1'h0) begin
+      s[0+15-:16] = a[0+15-:16] + b[0+15-:16];
+    end
+    if (alufn[0+0-:1] == 1'h1) begin
+      s[0+15-:16] = a[0+15-:16] - b[0+15-:16];
+    end
   end
 endmodule

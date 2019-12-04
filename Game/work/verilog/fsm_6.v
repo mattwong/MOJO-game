@@ -13,6 +13,7 @@ module statemachine_6 (
     input startbt,
     input clrbt,
     input [15:0] fromreg,
+    input [15:0] rngin,
     output reg [2:0] ra,
     output reg [5:0] alufn,
     output reg [2:0] bsel,
@@ -20,7 +21,8 @@ module statemachine_6 (
     output reg we,
     output reg [2:0] wa,
     output reg [15:0] toreg,
-    output reg reset
+    output reg reset,
+    output reg rngout
   );
   
   
@@ -43,23 +45,9 @@ module statemachine_6 (
   
   reg [3:0] M_state_d, M_state_q = IDLE_state;
   
-  wire [16-1:0] M_rng_num;
-  reg [1-1:0] M_rng_clk;
-  reg [1-1:0] M_rng_rst;
-  reg [1-1:0] M_rng_next;
-  random_problem_36 rng (
-    .clk(M_rng_clk),
-    .rst(M_rng_rst),
-    .next(M_rng_next),
-    .num(M_rng_num)
-  );
-  
   always @* begin
     M_state_d = M_state_q;
     
-    M_rng_clk = clk;
-    M_rng_rst = rst;
-    M_rng_next = 1'h0;
     alufn = 1'h0;
     ra = 1'h0;
     bsel = 1'h0;
@@ -68,6 +56,7 @@ module statemachine_6 (
     wa = 1'h0;
     toreg = 1'h0;
     reset = 1'h0;
+    rngout = 1'h0;
     
     case (M_state_q)
       IDLE_state: begin
@@ -79,8 +68,8 @@ module statemachine_6 (
       SELPROB_state: begin
         we = 1'h1;
         wa = 3'h1;
-        M_rng_next = 1'h1;
-        toreg = M_rng_num;
+        rngout = 1'h1;
+        toreg = rngin;
         M_state_d = PROB_state;
       end
       PROB_state: begin

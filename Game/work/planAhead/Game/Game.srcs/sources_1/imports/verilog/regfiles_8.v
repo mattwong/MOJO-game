@@ -55,19 +55,19 @@ module regfiles_8 (
   reg [0:0] M_x_d, M_x_q = 1'h0;
   
   always @* begin
-    M_r12_d = M_r12_q;
-    M_r11_d = M_r11_q;
-    M_r10_d = M_r10_q;
-    M_r6_d = M_r6_q;
-    M_r7_d = M_r7_q;
-    M_r8_d = M_r8_q;
-    M_r9_d = M_r9_q;
-    M_r1_d = M_r1_q;
     M_r2_d = M_r2_q;
     M_r3_d = M_r3_q;
     M_r4_d = M_r4_q;
     M_r5_d = M_r5_q;
+    M_r6_d = M_r6_q;
+    M_r7_d = M_r7_q;
+    M_r8_d = M_r8_q;
+    M_r9_d = M_r9_q;
+    M_r10_d = M_r10_q;
+    M_r12_d = M_r12_q;
+    M_r11_d = M_r11_q;
     M_x_d = M_x_q;
+    M_r1_d = M_r1_q;
     
     if (M_x_q == 1'h0) begin
       M_r4_d = 1'h1;
@@ -80,6 +80,9 @@ module regfiles_8 (
     end
     if (reset == 1'h1) begin
       M_x_d = 1'h0;
+      M_r10_d = 1'h0;
+      M_r1_d = 1'h0;
+      M_r2_d = 1'h0;
     end
     if (we1) begin
       

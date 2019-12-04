@@ -74,6 +74,9 @@ module regfiles (
     
     if (reset == 1){
       x.d = 0;
+      r10.d = 0;
+      r1.d = 0;
+      r2.d = 0;
     }
     
     //write
