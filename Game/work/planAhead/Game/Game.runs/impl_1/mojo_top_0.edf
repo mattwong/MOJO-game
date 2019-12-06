@@ -4,9 +4,9 @@
   (keywordmap (keywordlevel 0))
 (status
  (written
-  (timeStamp 2019 12 04 12 42 21)
+  (timeStamp 2019 12 06 08 23 26)
   (program "PlanAhead" (version "14.7"))
-  (comment "Built on 'Fri Sep 27 19:24:36 MDT 2013'")
+  (comment "Built on 'Fri Sep 27 19:29:51 MDT 2013'")
   (comment "Built by 'xbuild'")
  )
 )
@@ -20435,7 +20435,7 @@
          )
          (instance Mmux_M_w_d301 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
-           (property INIT (string "64'h4114144114414114"))
+           (property INIT (string "64'hEBBEBEEBBEEBEBBE"))
          )
          (instance Mmux_M_w_d311 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
@@ -23643,7 +23643,7 @@
          (instance Mmux_M_w_d110 (viewref netlist (cellref LUT5 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
            (property PK_HLUTNM (string "___XLNM___32___rng2/rng/Mmux_M_z_d111"))
-           (property INIT (string "32'hBEEBEBBE"))
+           (property INIT (string "32'h14414114"))
          )
          (instance Mmux_M_w_d210 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
@@ -23731,7 +23731,7 @@
          (instance Mmux_M_w_d231 (viewref netlist (cellref LUT5 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
            (property PK_HLUTNM (string "___XLNM___30___rng2/rng/Mmux_M_z_d231"))
-           (property INIT (string "32'h14414114"))
+           (property INIT (string "32'hBEEBEBBE"))
          )
          (instance Mmux_M_w_d241 (viewref netlist (cellref LUT4 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
@@ -23745,7 +23745,7 @@
          )
          (instance Mmux_M_w_d261 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
-           (property INIT (string "64'h4114144114414114"))
+           (property INIT (string "64'hEBBEBEEBBEEBEBBE"))
          )
          (instance Mmux_M_w_d271 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
@@ -23753,7 +23753,7 @@
          )
          (instance Mmux_M_w_d281 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
-           (property INIT (string "64'h4114144114414114"))
+           (property INIT (string "64'hEBBEBEEBBEEBEBBE"))
          )
          (instance Mmux_M_w_d291 (viewref netlist (cellref LUT6 (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
@@ -36760,7 +36760,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_0_ "M_seven_seg11_segs1[0]") (joined
-          (portref I (instanceref p1display_7_OBUF))
+          (portref I (instanceref p1display_0_OBUF))
           (portref (member segs1 6) (instanceref seven_seg11))
           )
          )
@@ -36800,7 +36800,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_1_ "M_seven_seg11_segs1[1]") (joined
-          (portref I (instanceref p1display_8_OBUF))
+          (portref I (instanceref p1display_1_OBUF))
           (portref (member segs1 5) (instanceref seven_seg11))
           )
          )
@@ -36820,7 +36820,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_2_ "M_seven_seg11_segs1[2]") (joined
-          (portref I (instanceref p1display_9_OBUF))
+          (portref I (instanceref p1display_2_OBUF))
           (portref (member segs1 4) (instanceref seven_seg11))
           )
          )
@@ -36835,7 +36835,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_3_ "M_seven_seg11_segs1[3]") (joined
-          (portref I (instanceref p1display_10_OBUF))
+          (portref I (instanceref p1display_3_OBUF))
           (portref (member segs1 3) (instanceref seven_seg11))
           )
          )
@@ -36850,7 +36850,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_4_ "M_seven_seg11_segs1[4]") (joined
-          (portref I (instanceref p1display_11_OBUF))
+          (portref I (instanceref p1display_4_OBUF))
           (portref (member segs1 2) (instanceref seven_seg11))
           )
          )
@@ -36870,7 +36870,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_5_ "M_seven_seg11_segs1[5]") (joined
-          (portref I (instanceref p1display_12_OBUF))
+          (portref I (instanceref p1display_5_OBUF))
           (portref (member segs1 1) (instanceref seven_seg11))
           )
          )
@@ -36885,7 +36885,7 @@
           )
          )
          (net (rename M_seven_seg11_segs1_6_ "M_seven_seg11_segs1[6]") (joined
-          (portref I (instanceref p1display_13_OBUF))
+          (portref I (instanceref p1display_6_OBUF))
           (portref (member segs1 0) (instanceref seven_seg11))
           )
          )
@@ -37098,7 +37098,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_0_ "M_seven_seg22_segs2[0]") (joined
-          (portref I (instanceref p2display_7_OBUF))
+          (portref I (instanceref p2display_0_OBUF))
           (portref (member segs2 6) (instanceref seven_seg22))
           )
          )
@@ -37144,7 +37144,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_1_ "M_seven_seg22_segs2[1]") (joined
-          (portref I (instanceref p2display_8_OBUF))
+          (portref I (instanceref p2display_1_OBUF))
           (portref (member segs2 5) (instanceref seven_seg22))
           )
          )
@@ -37170,7 +37170,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_2_ "M_seven_seg22_segs2[2]") (joined
-          (portref I (instanceref p2display_9_OBUF))
+          (portref I (instanceref p2display_2_OBUF))
           (portref (member segs2 4) (instanceref seven_seg22))
           )
          )
@@ -37202,7 +37202,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_3_ "M_seven_seg22_segs2[3]") (joined
-          (portref I (instanceref p2display_10_OBUF))
+          (portref I (instanceref p2display_3_OBUF))
           (portref (member segs2 3) (instanceref seven_seg22))
           )
          )
@@ -37224,7 +37224,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_4_ "M_seven_seg22_segs2[4]") (joined
-          (portref I (instanceref p2display_11_OBUF))
+          (portref I (instanceref p2display_4_OBUF))
           (portref (member segs2 2) (instanceref seven_seg22))
           )
          )
@@ -37245,7 +37245,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_5_ "M_seven_seg22_segs2[5]") (joined
-          (portref I (instanceref p2display_12_OBUF))
+          (portref I (instanceref p2display_5_OBUF))
           (portref (member segs2 1) (instanceref seven_seg22))
           )
          )
@@ -37284,7 +37284,7 @@
           )
          )
          (net (rename M_seven_seg22_segs2_6_ "M_seven_seg22_segs2[6]") (joined
-          (portref I (instanceref p2display_13_OBUF))
+          (portref I (instanceref p2display_6_OBUF))
           (portref (member segs2 0) (instanceref seven_seg22))
           )
          )
@@ -37309,7 +37309,7 @@
           )
          )
          (net (rename M_seven_seg11_segs2_0_ "M_seven_seg11_segs2[0]") (joined
-          (portref I (instanceref p1display_0_OBUF))
+          (portref I (instanceref p1display_7_OBUF))
           (portref (member segs2 6) (instanceref seven_seg11))
           )
          )
@@ -37324,12 +37324,12 @@
           )
          )
          (net (rename M_seven_seg11_segs2_1_ "M_seven_seg11_segs2[1]") (joined
-          (portref I (instanceref p1display_1_OBUF))
+          (portref I (instanceref p1display_8_OBUF))
           (portref (member segs2 5) (instanceref seven_seg11))
           )
          )
          (net (rename M_seven_seg11_segs2_2_ "M_seven_seg11_segs2[2]") (joined
-          (portref I (instanceref p1display_2_OBUF))
+          (portref I (instanceref p1display_9_OBUF))
           (portref (member segs2 4) (instanceref seven_seg11))
           )
          )
@@ -37356,12 +37356,12 @@
           )
          )
          (net (rename M_seven_seg11_segs2_3_ "M_seven_seg11_segs2[3]") (joined
-          (portref I (instanceref p1display_3_OBUF))
+          (portref I (instanceref p1display_10_OBUF))
           (portref (member segs2 3) (instanceref seven_seg11))
           )
          )
          (net (rename M_seven_seg11_segs2_4_ "M_seven_seg11_segs2[4]") (joined
-          (portref I (instanceref p1display_4_OBUF))
+          (portref I (instanceref p1display_11_OBUF))
           (portref (member segs2 2) (instanceref seven_seg11))
           )
          )
@@ -37381,7 +37381,7 @@
           )
          )
          (net (rename M_seven_seg11_segs2_5_ "M_seven_seg11_segs2[5]") (joined
-          (portref I (instanceref p1display_5_OBUF))
+          (portref I (instanceref p1display_12_OBUF))
           (portref (member segs2 1) (instanceref seven_seg11))
           )
          )
@@ -37391,7 +37391,7 @@
           )
          )
          (net (rename M_seven_seg11_segs2_6_ "M_seven_seg11_segs2[6]") (joined
-          (portref I (instanceref p1display_6_OBUF))
+          (portref I (instanceref p1display_13_OBUF))
           (portref (member segs2 0) (instanceref seven_seg11))
           )
          )
@@ -37565,16 +37565,6 @@
          (net (rename M_reg_p2num_7_ "M_reg_p2num[7]") (joined
           (portref (member char 8) (instanceref seven_seg22))
           (portref (member p2num 8) (instanceref L_reg))
-          )
-         )
-         (net (rename M_rng2_seed_32_ "M_rng2_seed[32]") (joined
-          (portref P (instanceref XST_VCC))
-          (portref T (instanceref spi_channel_3_OBUFT))
-          (portref T (instanceref spi_channel_2_OBUFT))
-          (portref T (instanceref spi_channel_1_OBUFT))
-          (portref T (instanceref spi_channel_0_OBUFT))
-          (portref T (instanceref spi_miso_OBUFT))
-          (portref T (instanceref avr_rx_OBUFT))
           )
          )
          (net (rename M_ctl1_ra_1_ "M_ctl1_ra[1]") (joined
@@ -38197,6 +38187,16 @@
          (net out_2 (joined
           (portref I2 (instanceref M_condAdd2_out_inv1))
           (portref condAdd2_out (instanceref condAdd2))
+          )
+         )
+         (net (rename M_rng1_seed_25_ "M_rng1_seed[25]") (joined
+          (portref P (instanceref XST_VCC))
+          (portref T (instanceref spi_channel_3_OBUFT))
+          (portref T (instanceref spi_channel_2_OBUFT))
+          (portref T (instanceref spi_channel_1_OBUFT))
+          (portref T (instanceref spi_channel_0_OBUFT))
+          (portref T (instanceref spi_miso_OBUFT))
+          (portref T (instanceref avr_rx_OBUFT))
           )
          )
          (net out_3 (joined
@@ -40288,7 +40288,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_0_ "M_seven_seg22_segs1[0]") (joined
-          (portref I (instanceref p2display_0_OBUF))
+          (portref I (instanceref p2display_7_OBUF))
           (portref (member segs1 6) (instanceref seven_seg22))
           )
          )
@@ -40308,7 +40308,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_1_ "M_seven_seg22_segs1[1]") (joined
-          (portref I (instanceref p2display_1_OBUF))
+          (portref I (instanceref p2display_8_OBUF))
           (portref (member segs1 5) (instanceref seven_seg22))
           )
          )
@@ -40376,7 +40376,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_2_ "M_seven_seg22_segs1[2]") (joined
-          (portref I (instanceref p2display_2_OBUF))
+          (portref I (instanceref p2display_9_OBUF))
           (portref (member segs1 4) (instanceref seven_seg22))
           )
          )
@@ -40417,7 +40417,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_3_ "M_seven_seg22_segs1[3]") (joined
-          (portref I (instanceref p2display_3_OBUF))
+          (portref I (instanceref p2display_10_OBUF))
           (portref (member segs1 3) (instanceref seven_seg22))
           )
          )
@@ -40449,7 +40449,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_4_ "M_seven_seg22_segs1[4]") (joined
-          (portref I (instanceref p2display_4_OBUF))
+          (portref I (instanceref p2display_11_OBUF))
           (portref (member segs1 2) (instanceref seven_seg22))
           )
          )
@@ -40479,7 +40479,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_5_ "M_seven_seg22_segs1[5]") (joined
-          (portref I (instanceref p2display_5_OBUF))
+          (portref I (instanceref p2display_12_OBUF))
           (portref (member segs1 1) (instanceref seven_seg22))
           )
          )
@@ -40514,7 +40514,7 @@
           )
          )
          (net (rename M_seven_seg22_segs1_6_ "M_seven_seg22_segs1[6]") (joined
-          (portref I (instanceref p2display_6_OBUF))
+          (portref I (instanceref p2display_13_OBUF))
           (portref (member segs1 0) (instanceref seven_seg22))
           )
          )

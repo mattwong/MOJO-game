@@ -400,8 +400,8 @@ module mojo_top_0 (
     avr_rx = 1'bz;
     M_rng1_clk = clk;
     M_rng1_rst = rst;
-    M_rng1_seed = 1'h0;
-    M_rng2_seed = 1'h1;
+    M_rng1_seed = 8'h80;
+    M_rng2_seed = 6'h2c;
     M_rng2_clk = clk;
     M_rng2_rst = rst;
     M_rng2_next = M_ctl2_rngout;
@@ -506,10 +506,10 @@ module mojo_top_0 (
     M_seven_seg_p_char = M_reg_goalreg;
     goaldisplay[0+6-:7] = ~M_seven_seg_p_segs1;
     goaldisplay[7+6-:7] = ~M_seven_seg_p_segs2;
-    p1display[7+6-:7] = M_seven_seg11_segs1;
-    p1display[0+6-:7] = M_seven_seg11_segs2;
-    p2display[7+6-:7] = M_seven_seg22_segs2;
-    p2display[0+6-:7] = M_seven_seg22_segs1;
+    p1display[7+6-:7] = M_seven_seg11_segs2;
+    p1display[0+6-:7] = M_seven_seg11_segs1;
+    p2display[7+6-:7] = M_seven_seg22_segs1;
+    p2display[0+6-:7] = M_seven_seg22_segs2;
     lane1a[0+4-:5] = M_reg_lane1p1[0+4-:5];
     lane2a[0+4-:5] = M_reg_lane2p1[0+4-:5];
     lane3a[0+4-:5] = M_reg_lane3p1[0+4-:5];
