@@ -8,6 +8,7 @@ module statemachine (
     input clrbt,    //clear
     input fromreg[16],
     input rngin[16],
+    input inend,
     output ra[3],
     output alufn[6],
     output bsel[3],
@@ -16,7 +17,8 @@ module statemachine (
     output wa[3],      //write address
     output toreg[16],  //write data to registers
     output reset,       //reset signal for registers
-    output rngout
+    output rngout,
+    output outend
   ) {
   
   .clk(clk) {
@@ -39,6 +41,7 @@ module statemachine (
     toreg = 0;
     reset = 0;
     rngout = 0;
+    outend = 0;
     
     case(state.q){
       state.IDLE:
@@ -54,6 +57,8 @@ module statemachine (
         state.d = state.PROB;
         
       state.PROB:  
+        if (inend == 1)
+          state.d = state.END;
         if (addbt == 1)
           state.d = state.ADD;
         if (subbt == 1)
@@ -164,6 +169,7 @@ module statemachine (
         state.d = state.SELPROB;
         
       state.END:
+        outend = 1;
         if (startbt == 1){
           state.d = state.IDLE;
         }  

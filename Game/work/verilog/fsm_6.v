@@ -14,6 +14,7 @@ module statemachine_6 (
     input clrbt,
     input [15:0] fromreg,
     input [15:0] rngin,
+    input inend,
     output reg [2:0] ra,
     output reg [5:0] alufn,
     output reg [2:0] bsel,
@@ -22,7 +23,8 @@ module statemachine_6 (
     output reg [2:0] wa,
     output reg [15:0] toreg,
     output reg reset,
-    output reg rngout
+    output reg rngout,
+    output reg outend
   );
   
   
@@ -57,6 +59,7 @@ module statemachine_6 (
     toreg = 1'h0;
     reset = 1'h0;
     rngout = 1'h0;
+    outend = 1'h0;
     
     case (M_state_q)
       IDLE_state: begin
@@ -73,6 +76,9 @@ module statemachine_6 (
         M_state_d = PROB_state;
       end
       PROB_state: begin
+        if (inend == 1'h1) begin
+          M_state_d = END_state;
+        end
         if (addbt == 1'h1) begin
           M_state_d = ADD_state;
         end
@@ -194,6 +200,7 @@ module statemachine_6 (
         M_state_d = SELPROB_state;
       end
       END_state: begin
+        outend = 1'h1;
         if (startbt == 1'h1) begin
           M_state_d = IDLE_state;
         end

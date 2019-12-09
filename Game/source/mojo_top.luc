@@ -124,6 +124,7 @@ module mojo_top (
     ctl1.clrbt = edgeClr1.out;
     ctl1.fromreg = reg.fsmport1;
     ctl1.rngin = rng1.num;
+    ctl1.inend = ctl2.outend;
     
     ctl2.clk = clk;
     ctl2.rst = rst;
@@ -134,6 +135,7 @@ module mojo_top (
     ctl2.clrbt = edgeClr2.out;
     ctl2.fromreg = reg.fsmport2;
     ctl2.rngin = rng2.num;
+    ctl2.inend = ctl1.outend;
     
     alu1.alufn = ctl1.alufn;
     alu1.a = reg.a1;

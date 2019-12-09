@@ -111,6 +111,7 @@ module mojo_top_0 (
   wire [16-1:0] M_ctl1_toreg;
   wire [1-1:0] M_ctl1_reset;
   wire [1-1:0] M_ctl1_rngout;
+  wire [1-1:0] M_ctl1_outend;
   reg [1-1:0] M_ctl1_clk;
   reg [1-1:0] M_ctl1_rst;
   reg [1-1:0] M_ctl1_addbt;
@@ -120,6 +121,7 @@ module mojo_top_0 (
   reg [1-1:0] M_ctl1_clrbt;
   reg [16-1:0] M_ctl1_fromreg;
   reg [16-1:0] M_ctl1_rngin;
+  reg [1-1:0] M_ctl1_inend;
   statemachine_6 ctl1 (
     .clk(M_ctl1_clk),
     .rst(M_ctl1_rst),
@@ -130,6 +132,7 @@ module mojo_top_0 (
     .clrbt(M_ctl1_clrbt),
     .fromreg(M_ctl1_fromreg),
     .rngin(M_ctl1_rngin),
+    .inend(M_ctl1_inend),
     .ra(M_ctl1_ra),
     .alufn(M_ctl1_alufn),
     .bsel(M_ctl1_bsel),
@@ -138,7 +141,8 @@ module mojo_top_0 (
     .wa(M_ctl1_wa),
     .toreg(M_ctl1_toreg),
     .reset(M_ctl1_reset),
-    .rngout(M_ctl1_rngout)
+    .rngout(M_ctl1_rngout),
+    .outend(M_ctl1_outend)
   );
   
   wire [3-1:0] M_ctl2_ra;
@@ -150,6 +154,7 @@ module mojo_top_0 (
   wire [16-1:0] M_ctl2_toreg;
   wire [1-1:0] M_ctl2_reset;
   wire [1-1:0] M_ctl2_rngout;
+  wire [1-1:0] M_ctl2_outend;
   reg [1-1:0] M_ctl2_clk;
   reg [1-1:0] M_ctl2_rst;
   reg [1-1:0] M_ctl2_addbt;
@@ -159,6 +164,7 @@ module mojo_top_0 (
   reg [1-1:0] M_ctl2_clrbt;
   reg [16-1:0] M_ctl2_fromreg;
   reg [16-1:0] M_ctl2_rngin;
+  reg [1-1:0] M_ctl2_inend;
   statemachine_6 ctl2 (
     .clk(M_ctl2_clk),
     .rst(M_ctl2_rst),
@@ -169,6 +175,7 @@ module mojo_top_0 (
     .clrbt(M_ctl2_clrbt),
     .fromreg(M_ctl2_fromreg),
     .rngin(M_ctl2_rngin),
+    .inend(M_ctl2_inend),
     .ra(M_ctl2_ra),
     .alufn(M_ctl2_alufn),
     .bsel(M_ctl2_bsel),
@@ -177,7 +184,8 @@ module mojo_top_0 (
     .wa(M_ctl2_wa),
     .toreg(M_ctl2_toreg),
     .reset(M_ctl2_reset),
-    .rngout(M_ctl2_rngout)
+    .rngout(M_ctl2_rngout),
+    .outend(M_ctl2_outend)
   );
   
   wire [16-1:0] M_reg_a1;
@@ -400,8 +408,8 @@ module mojo_top_0 (
     avr_rx = 1'bz;
     M_rng1_clk = clk;
     M_rng1_rst = rst;
-    M_rng1_seed = 8'h80;
-    M_rng2_seed = 6'h2c;
+    M_rng1_seed = 9'h14d;
+    M_rng2_seed = 10'h3db;
     M_rng2_clk = clk;
     M_rng2_rst = rst;
     M_rng2_next = M_ctl2_rngout;
@@ -431,6 +439,7 @@ module mojo_top_0 (
     M_ctl1_clrbt = M_edgeClr1_out;
     M_ctl1_fromreg = M_reg_fsmport1;
     M_ctl1_rngin = M_rng1_num;
+    M_ctl1_inend = M_ctl2_outend;
     M_ctl2_clk = clk;
     M_ctl2_rst = rst;
     M_ctl2_startbt = start;
@@ -440,6 +449,7 @@ module mojo_top_0 (
     M_ctl2_clrbt = M_edgeClr2_out;
     M_ctl2_fromreg = M_reg_fsmport2;
     M_ctl2_rngin = M_rng2_num;
+    M_ctl2_inend = M_ctl1_outend;
     M_alu1_alufn = M_ctl1_alufn;
     M_alu1_a = M_reg_a1;
     
@@ -501,6 +511,7 @@ module mojo_top_0 (
     M_reg_alu2 = M_alu2_s;
     M_reg_fsm2 = M_ctl2_toreg;
     M_reg_reset = M_ctl1_reset;
+    M_reg_reset = M_ctl2_reset;
     M_seven_seg11_char = M_reg_p1num;
     M_seven_seg22_char = M_reg_p2num;
     M_seven_seg_p_char = M_reg_goalreg;

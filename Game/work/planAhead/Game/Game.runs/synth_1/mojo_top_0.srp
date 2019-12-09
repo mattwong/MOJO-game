@@ -2,8 +2,8 @@ Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.63 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -121,12 +121,11 @@ WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/wor
 Elaborating module <dual_seven_seg_3>.
 
 Elaborating module <statemachine_6>.
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 179: Assignment to M_ctl2_reset ignored, since the identifier is never used
 
 Elaborating module <regfiles_8>.
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 234: Assignment to M_reg_tob1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 235: Assignment to M_reg_tob2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 245: Assignment to M_reg_lanereg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 242: Assignment to M_reg_tob1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 243: Assignment to M_reg_tob2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 253: Assignment to M_reg_lanereg ignored, since the identifier is never used
 
 Elaborating module <random_problem_9>.
 
@@ -158,16 +157,16 @@ INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead
 INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <z> of the instance <alu2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <n> of the instance <alu2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 68: Output port <v> of the instance <alu2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 162: Output port <reset> of the instance <ctl2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 214: Output port <tob1> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 214: Output port <tob2> of the instance <L_reg> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 214: Output port <lanereg> of the instance <L_reg> is unconnected or connected to loadless signal.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 394
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 394
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 394
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 394
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 394
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 394
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 125: Output port <reset> of the instance <ctl1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 222: Output port <tob1> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 222: Output port <tob2> of the instance <L_reg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Matthew/Documents/GitHub/MOJO-game/Game/work/planAhead/Game/Game.srcs/sources_1/imports/verilog/mojo_top_0.v" line 222: Output port <lanereg> of the instance <L_reg> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 402
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 402
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 402
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 402
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 402
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 402
     Summary:
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
@@ -244,9 +243,9 @@ Synthesizing Unit <statemachine_6>.
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 15                                             |
-    | Transitions        | 29                                             |
-    | Inputs             | 10                                             |
-    | Outputs            | 23                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 24                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | rst (positive)                                 |
     | Reset type         | synchronous                                    |
@@ -433,18 +432,18 @@ Optimizing FSM <FSM_0> on signal <M_state_q[1:15]> with one-hot encoding.
  0000  | 000000000000001
  0001  | 000000000000010
  0010  | 000000000000100
- 0011  | 000000000001000
- 0100  | 000000000010000
- 0101  | 000000000100000
- 0110  | 000000001000000
- 0111  | 000000010000000
- 1000  | 000000100000000
- 1001  | 000001000000000
- 1010  | 000010000000000
- 1011  | 000100000000000
- 1100  | 001000000000000
- 1101  | 010000000000000
- 1110  | 100000000000000
+ 1110  | 000000000001000
+ 0011  | 000000000010000
+ 0100  | 000000000100000
+ 0101  | 000000001000000
+ 0110  | 000000010000000
+ 0111  | 000000100000000
+ 1000  | 000001000000000
+ 1001  | 000010000000000
+ 1010  | 000100000000000
+ 1011  | 001000000000000
+ 1100  | 010000000000000
+ 1101  | 100000000000000
 --------------------------
 
 Optimizing unit <mojo_top_0> ...
@@ -469,17 +468,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L_reg/M_r3_q_7> has
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 29.
-FlipFlop ctl1/M_state_q_FSM_FFd2 has been replicated 4 time(s)
-FlipFlop ctl1/M_state_q_FSM_FFd3 has been replicated 3 time(s)
-FlipFlop ctl1/M_state_q_FSM_FFd4 has been replicated 2 time(s)
-FlipFlop ctl1/M_state_q_FSM_FFd8 has been replicated 1 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd1 has been replicated 4 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd2 has been replicated 3 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop ctl1/M_state_q_FSM_FFd7 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd1 has been replicated 4 time(s)
 FlipFlop ctl2/M_state_q_FSM_FFd10 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd11 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd2 has been replicated 4 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd2 has been replicated 3 time(s)
 FlipFlop ctl2/M_state_q_FSM_FFd3 has been replicated 3 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd4 has been replicated 3 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd5 has been replicated 1 time(s)
-FlipFlop ctl2/M_state_q_FSM_FFd8 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd4 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd7 has been replicated 1 time(s)
+FlipFlop ctl2/M_state_q_FSM_FFd9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -525,15 +524,15 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1885
+# BELS                             : 1889
 #      GND                         : 25
 #      INV                         : 18
 #      LUT1                        : 152
 #      LUT2                        : 240
-#      LUT3                        : 59
+#      LUT3                        : 64
 #      LUT4                        : 139
 #      LUT5                        : 164
-#      LUT6                        : 661
+#      LUT6                        : 660
 #      MUXCY                       : 194
 #      MUXF7                       : 18
 #      VCC                         : 23
@@ -563,17 +562,17 @@ Selected Device : 6slx9tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             674  out of  11440     5%  
- Number of Slice LUTs:                 1441  out of   5720    25%  
-    Number used as Logic:              1433  out of   5720    25%  
+ Number of Slice LUTs:                 1445  out of   5720    25%  
+    Number used as Logic:              1437  out of   5720    25%  
     Number used as Memory:                8  out of   1440     0%  
        Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1532
-   Number with an unused Flip Flop:     858  out of   1532    56%  
-   Number with an unused LUT:            91  out of   1532     5%  
-   Number of fully used LUT-FF pairs:   583  out of   1532    38%  
-   Number of unique control sets:        52
+ Number of LUT Flip Flop pairs used:   1565
+   Number with an unused Flip Flop:     891  out of   1565    56%  
+   Number with an unused LUT:           120  out of   1565     7%  
+   Number of fully used LUT-FF pairs:   554  out of   1565    35%  
+   Number of unique control sets:        54
 
 IO Utilization: 
  Number of IOs:                         103
@@ -616,7 +615,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 10.722ns (Maximum Frequency: 93.266MHz)
-   Minimum input arrival time before clock: 3.526ns
+   Minimum input arrival time before clock: 3.572ns
    Maximum output required time after clock: 10.432ns
    Maximum combinational path delay: No path found
 
@@ -627,20 +626,20 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 10.722ns (frequency: 93.266MHz)
-  Total number of paths / destination ports: 250727 / 1670
+  Total number of paths / destination ports: 250917 / 1670
 -------------------------------------------------------------------------
 Delay:               10.722ns (Levels of Logic = 9)
-  Source:            ctl1/M_state_q_FSM_FFd5 (FF)
+  Source:            ctl1/M_state_q_FSM_FFd4 (FF)
   Destination:       L_reg/M_r10_q_15 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: ctl1/M_state_q_FSM_FFd5 to L_reg/M_r10_q_15
+  Data Path: ctl1/M_state_q_FSM_FFd4 to L_reg/M_r10_q_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             21   0.525   1.310  M_state_q_FSM_FFd5 (M_state_q_FSM_FFd5)
-     end scope: 'ctl1:M_state_q_FSM_FFd5'
+     FDR:C->Q             21   0.525   1.310  M_state_q_FSM_FFd4 (M_state_q_FSM_FFd4)
+     end scope: 'ctl1:M_state_q_FSM_FFd4'
      LUT3:I2->O           16   0.254   1.182  M_ctl1_asel<1>1_1 (M_ctl1_asel<1>1)
      begin scope: 'L_reg:M_ctl1_asel<1>1'
      LUT6:I5->O           15   0.254   1.154  mux6114 (a1<15>)
@@ -662,22 +661,23 @@ Delay:               10.722ns (Levels of Logic = 9)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 18 / 18
 -------------------------------------------------------------------------
-Offset:              3.526ns (Levels of Logic = 3)
-  Source:            rst_n (PAD)
-  Destination:       reset_cond/M_stage_q_3 (FF)
+Offset:              3.572ns (Levels of Logic = 4)
+  Source:            start (PAD)
+  Destination:       ctl1/M_state_q_FSM_FFd12 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to reset_cond/M_stage_q_3
+  Data Path: start to ctl1/M_state_q_FSM_FFd12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O              4   0.255   0.803  M_reset_cond_in1_INV_0 (M_reset_cond_in)
-     begin scope: 'reset_cond:in'
-     FDS:S                     0.459          M_stage_q_0
+     IBUF:I->O             6   1.328   0.876  start_IBUF (start_IBUF)
+     begin scope: 'ctl1:startbt'
+     LUT6:I5->O            1   0.254   0.790  M_state_q_FSM_FFd12-In1 (M_state_q_FSM_FFd12-In2)
+     LUT6:I4->O            1   0.250   0.000  M_state_q_FSM_FFd12-In2 (M_state_q_FSM_FFd12-In)
+     FDR:D                     0.074          M_state_q_FSM_FFd12
     ----------------------------------------
-    Total                      3.526ns (2.042ns logic, 1.484ns route)
-                                       (57.9% logic, 42.1% route)
+    Total                      3.572ns (1.906ns logic, 1.666ns route)
+                                       (53.4% logic, 46.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -722,14 +722,14 @@ clk            |   10.722|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.41 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.86 secs
  
 --> 
 
-Total memory usage is 4548452 kilobytes
+Total memory usage is 4517092 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
 Number of infos    :   12 (   0 filtered)
 
