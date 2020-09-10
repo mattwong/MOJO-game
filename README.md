@@ -27,7 +27,7 @@ We took inspiration from Calculords, a turn-based tower defence game that one of
 
 <p align="center"> 
 <img src="https://github.com/zackteo/MOJO-game/blob/readme/Images/Calculords.jpg"></a>
-<i>Here's a photo of our group!</i>
+<i>Calculords’ UI and mechanics</i>
 </p>
 
 <p align="center"> 
